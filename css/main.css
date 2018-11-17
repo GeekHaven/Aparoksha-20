@@ -1700,13 +1700,13 @@ header .social-links ul li a:focus {
  * ------------------------------------------------------------------- */
 footer {
 	text-align: center;
-	padding-bottom: 12rem;
+	padding-bottom: 0;
 	position: relative;
 }
 
 footer .social-wrap {
 	background: #151515;
-	margin-bottom: 4.8rem;
+	margin-bottom: 0;
 }
 
 footer .footer-social-list {
