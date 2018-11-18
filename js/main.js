@@ -61,7 +61,7 @@
 	/* tabs
   	-------------------------------------------------------*/	
 	$(".tab-content").hide();
-	$(".tab-content").first().show();
+	$(".tab-content").last().show();
 
 	$("ul.tabs li").click(function () {
 	   $("ul.tabs li").removeClass("active");
