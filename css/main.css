@@ -868,13 +868,13 @@ header .logo a {
  * ------------------------------------------------------------------- */
 header .social-links {
 	position: absolute;
-	right: 20px;
+	right: 0px;
 	top: 78px;
 	text-align: right;
 }
 
 header .social-links ul {
-	display: block;
+	display: grid;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -883,7 +883,7 @@ header .social-links ul {
 
 header .social-links ul li {
 	display: inline-block;
-	padding: 0 .9rem;
+	padding: 10px;
 }
 
 header .social-links ul li:last-child {
@@ -897,7 +897,7 @@ header .social-links ul li a:visited {
 
 header .social-links ul li a:hover,
 header .social-links ul li a:focus {
-	color: #333;
+	color: #FFCA28;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1754,7 +1754,7 @@ footer .footer-social-list a:visited {
 
 footer .footer-social-list a:hover,
 footer .footer-social-list a:focus {
-	color: #057f78;
+	color: #ff1919;
 }
 
 footer .footer-social-list li {
