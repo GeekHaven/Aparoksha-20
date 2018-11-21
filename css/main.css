@@ -69,7 +69,7 @@ body {
  * links - (_document-setup) 
  * ------------------------------------------------------------------- */
 a, a:visited {
-	color: #057f78;
+	color: #fff;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -897,7 +897,7 @@ header .social-links ul li a:visited {
 
 header .social-links ul li a:hover,
 header .social-links ul li a:focus {
-	color: #057f78;
+	color: #333;
 }
 
 /* ------------------------------------------------------------------- 
@@ -989,7 +989,10 @@ header .social-links ul li a:focus {
  *
  * ------------------------------------------------------------------- */
 #home {
-	background: #020507;
+	background: #020507 url('../images/bg3.jpg');
+	/*background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+	background-image: url('../images/bgg.jpg');*/
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 	min-height: 800px;
@@ -1013,7 +1016,7 @@ header .social-links ul li a:focus {
 }
 
 #home.home-static {
-	background-image: url(../images/home-bg.jpg);
+	background-image: url(../images/bgg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -1727,8 +1730,10 @@ header .social-links ul li a:focus {
  * ------------------------------------------------------------------- */
 footer {
 	text-align: center;
-	padding-bottom: 0;
+	padding-top: 20px;
+	padding: 20px;
 	position: relative;
+	background: #111111;
 }
 
 footer .social-wrap {
