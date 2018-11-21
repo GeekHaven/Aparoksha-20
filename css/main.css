@@ -989,11 +989,7 @@ header .social-links ul li a:focus {
  *
  * ------------------------------------------------------------------- */
 #home {
-<<<<<<< HEAD
 	background: #020507 url('../images/bg3.jpg');
-=======
-	background: #020507 url('../images/bgg.jpg');
->>>>>>> 032d3c4e64434b81aaf562ee6a4afda5dc1c1e57
 	/*background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
 	background-image: url('../images/bgg.jpg');*/
 	background-size: cover;
