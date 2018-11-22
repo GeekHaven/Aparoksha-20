@@ -868,7 +868,7 @@ header .logo a {
  * ------------------------------------------------------------------- */
 header .social-links {
 	position: absolute;
-	right: 0px;
+	right: -80px;
 	top: 78px;
 	text-align: right;
 }
