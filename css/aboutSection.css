@@ -1,0 +1,52 @@
+.par{
+color:red;
+}
+.anime-left{
+animation-name: moveinleft;
+animation-duration: 1.5s;
+animation-timing-function: ease-in;
+}
+.anime-right{
+animation-name: moveinright;
+animation-duration: 1.5s;
+animation-timing-function:ease-in;
+}
+@keyframes moveinleft{
+0%
+{
+opacity:0;
+transform: translateX(-10rem);
+}
+80%
+{
+opacity:0.5;
+transform:translateX(1rem);
+}
+100%
+{
+opacity:1;
+transform:translateX(0);
+}
+}
+@keyframes moveinright
+{
+0%
+{
+opacity:0;
+transform:translateX(10rem);
+}
+80%
+{
+opacity:0.5;
+transform:translateX(-1rem);
+}
+100%
+{
+opacity:1;
+transform:translateX(0px);
+}
+}
+.newlogo{
+margin-bottom:4rem;
+}
+}
