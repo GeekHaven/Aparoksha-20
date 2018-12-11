@@ -1051,6 +1051,9 @@ header .social-links ul li a:focus {
 	position: relative;
 }
 .main-content-tablecell {
+	position: absolute;
+	top: 35vh;
+	width: 100%;
 	display: table-cell;
 	vertical-align: bottom;
 	z-index: 700;
@@ -1080,15 +1083,16 @@ header .social-links ul li a:focus {
 	text-align: right;
 	color: #FFFFFF;
 	font-family: "roboto-black", sans-serif;
-	font-size: 12rem;
+	font-size: 6rem;
 	line-height: 1;
 	padding: 0;
 	margin-bottom: 1.5rem;
+	margin: 1px;
 }
 .main-content-tablecell #counter span sup {
 	font-family: "roboto-bold", sans-serif;
-	font-size: .17em;
-	color: rgba(255, 255, 255, 0.3);
+	font-size: .25em;
+	color: rgba(255, 255, 255, 0.8);
 	top: -3.6em;
 	right: 1em;
 }
@@ -1193,7 +1197,7 @@ header .social-links ul li a:focus {
 		margin-bottom: 2.4rem;
 	}
 	.main-content-tablecell #counter span {
-		font-size: 11rem;
+		font-size: 6rem;
 	}
 }
 @media only screen and (max-width:1024px) {
@@ -1209,7 +1213,7 @@ header .social-links ul li a:focus {
 		margin-bottom: 1.2rem;
 	}
 	.main-content-tablecell #counter span {
-		font-size: 10.4rem;
+		font-size: 6rem;
 	}
 	.main-content-tablecell .row {
 		padding-bottom: 12rem;
@@ -1235,7 +1239,7 @@ header .social-links ul li a:focus {
 		margin-bottom: .9rem;
 	}
 	.main-content-tablecell #counter span {
-		font-size: 8.4rem;
+		font-size: 6rem;
 	}
 	.main-content-tablecell h1 {
 		font-size: 2.7rem;
