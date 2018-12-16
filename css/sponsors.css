@@ -15,7 +15,7 @@ width:100%;
 margin-left:50%;
 transform: translate(-50%,0);
 }
-@media screen and (max-width: 450px) 
+@media screen and (max-width: 767px) 
 {
 .col-12,.col-sm-6,.col-lg-4,.col-lg-12{
 margin-left:50%;
