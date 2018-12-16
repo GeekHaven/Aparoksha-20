@@ -1309,6 +1309,22 @@ header .social-links ul li a:focus {
 	}
 
 }
+@media only screen and (max-height: 560px) and (max-width: 500px){
+	#counter{
+		transform: translateY(-475%);
+	}
+	.bottom-text{
+         transform: translateY(-550%);
+	}
+	.logo{
+		display: none;
+	}
+	.main-content-tablecell #counter {
+		margin-bottom: 1.5rem;
+	}
+
+}
+
 
 
 /* ===================================================================
