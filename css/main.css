@@ -1213,7 +1213,9 @@ header .social-links ul li a:focus {
 		margin-bottom: 1.2rem;
 	}
 	.main-content-tablecell #counter span {
-		font-size: 6rem;
+		font-size: 3rem;
+
+
 	}
 	.main-content-tablecell .row {
 		padding-bottom: 12rem;
@@ -1239,15 +1241,39 @@ header .social-links ul li a:focus {
 		margin-bottom: .9rem;
 	}
 	.main-content-tablecell #counter span {
-		font-size: 6rem;
+		font-size: 3rem;
 	}
 	.main-content-tablecell h1 {
 		font-size: 2.7rem;
 	}
 }
 @media only screen and (max-width:500px) {
-	.main-content-tablecell #counter span {
-		font-size: 7.2rem;
+	.main-content-tablecell #counter span{
+		font-size: 3.5rem;
+		background-image: linear-gradient(to right,#fff,#666);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       -moz-background-clip:text;
+       -moz-fill:transparent;
+	}
+	sup{
+		font-size:3.5rem;
+		background-image: linear-gradient(to right,#fff,#666);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       -moz-background-clip:text;
+       -moz-fill:transparent;       
+	}
+	#counter{
+		transform:translateY(-620%);
+	}
+	.logo{
+		display: none;
+	}
+	.bottom-text{
+		font-size:3.5rem;
+		transform:translateY(-620%);
+		color:#999;  
 	}
 }
 @media only screen and (max-width:400px) {
@@ -1258,16 +1284,30 @@ header .social-links ul li a:focus {
 		margin-bottom: 1.5rem;
 	}
 	.main-content-tablecell #counter span {
-		font-size: 6rem;
-		margin-bottom: .9rem;
-	}
-	.main-content-tablecell #counter span sup {
-		font-size: .2em;
-		top: -2.8em;
+		font-size: 3.5rem;
 	}
 	.main-content-tablecell h1 {
 		font-size: 2.4rem;
 	}
+	#counter{
+		transform:translateY(-600%);
+	}
+	.logo{
+		display: none;
+	}
+	.bottom-text{
+		transform:translateY(-700%);
+	}
+	
+}
+@media only screen and (max-width: 335px){
+	#counter{
+		transform:translateY(-700%);
+	}
+	.main-content-tablecell #counter span {
+		font-size: 2.5rem;
+	}
+
 }
 
 
