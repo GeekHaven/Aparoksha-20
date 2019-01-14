@@ -76,9 +76,9 @@ a, a:visited {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
 a:hover, a:focus {
 	color: #000000;
-}
 
 /* ===================================================================
  * 03. typography & general theme styles - (_document-setup.scss) 
