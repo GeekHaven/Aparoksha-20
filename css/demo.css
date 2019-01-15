@@ -117,8 +117,10 @@ a, a:visited {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 a:hover, a:focus {
   color: #034e4a;
+}
 
 h1, h3 {
   font-family: "roboto-black", sans-serif;
