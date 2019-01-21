@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Events-Aparoksha</title>
+		<meta name="description" content="A Masonry-powered grid layout with a motion hover effect on the grid items and a scrollable content view." />
+		<meta name="keywords" content="masonry, grid layout, hover effect, content preview, javascript, gsap, template, web design" />
+		<link rel="shortcut icon" href="apkfav.png">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<style>
+           h3{
+           	font-family: 'Source Code Pro', monospace;
+           	color:black;
+           	font-weight: 800;
+           }
+           p{          	
+           	background-image: linear-gradient(to right bottom,teal,#000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip:text;
+            -moz-fill:transparent;
+           }
+           span{           	
+           	font-family: 'Source Code Pro', monospace;           	
+           	background-image: linear-gradient(to right bottom,teal,#555);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip:text;
+            -moz-fill:transparent;
+           }
+           
+      	</style>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="grid-wrap">
+				<div class="grid">
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="image/CodingEvents/humblefoolcup.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Humble Fool Cup</h3>
+						<h4 class="grid__item-number">E01</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="image/CodingEvents/Alkhwarizm.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Alkhwarizm</h3>
+						<h4 class="grid__item-number">A21</h4>
+					</a>
+					
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="image/CodingEvents/CFresh.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">C Fresh</h3>
+						<h4 class="grid__item-number">HK9</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="image/CodingEvents/3Musketeersjpg.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">3 Musketeers</h3>
+						<h4 class="grid__item-number">FW1</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="image/CodingEvents/CodeQueen.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Code Queen</h3>
+						<h4 class="grid__item-number">DZ5</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="image/CodingEvents/LangChallenge.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Lang Challenge</h3>
+						<h4 class="grid__item-number">M02</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="image/CodingEvents/BlindWar.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Blind War</h3>
+						<h4 class="grid__item-number">KL7</h4>
+					</a>
+					
+				</div>
+			</div><!-- /grid-wrap -->
+			<div class="content">
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="image/CodingEvents/humblefoolcup.jpg" alt="Some image" />
+						<h2 class="content__item-title">Aparoksha Presents</h2>
+					</div>
+					<h3 class="content__item-subtitle">Humble Fool Cup</h3>
+					<div class="content__item-text">
+						<p> Humblefool Cup is a 2-tier ACM-ICPC style national level coding contest conducted in the fond
+                          memory of Harsha Suryanarayana A.K.A Humblefool, one of the best coders of India, an alumnus
+                          of IIIT Allahabad and one of the very first Indian red coders on Topcoder. For everyone who ever
+                          admired humblefool or has a knack for competitive coding, put on your coding caps and prepare
+                          yourself for a fierce competition at one of the most prestigious coding contests of the country.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="image/CodingEvents/Alkhwarizm.jpg" alt="Some image" />
+						<h2 class="content__item-title">Aparoksha Presents</h2>
+					</div>
+					<h3 class="content__item-subtitle">Alkhwarizm</h3>
+					<div class="content__item-text">
+						<p> Alkhwarism is the annual National level programming competition of Aparoksha which focuses
+                        on the knowledge of Algorithms. Previous year's edition garnered a participation of 779 coders,
+                        out of which 51 were International participants.</p>
+					</div>
+				</div><!-- /content__item -->
+				
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="image/CodingEvents/CFresh.jpg" alt="Some image" />
+						<h2 class="content__item-title">Aparoksha Presents</h2>
+					</div>
+					<h3 class="content__item-subtitle">C Fresh</h3>
+					<div class="content__item-text">
+						<p>
+							 It is a programming contest held each year to promote competitive coding skills among the
+                             students of first year. For all the freshers out there, here’s your stage to step on and prove your
+                             coding skills – a challenging stage, a nail-biting one!
+
+						</p>
+						</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="image/CodingEvents/3Musketeersjpg.jpg" alt="Some image" />
+						<h2 class="content__item-title">Aparoksha Presents</h2>
+					</div>
+					<h3 class="content__item-subtitle">3 Musketeers</h3>
+					<div class="content__item-text">
+						<p> A coding contest but with an exciting twist.Complete your teammate’s code and see if you really
+                       make a good team. Each member of the team gets 15 minutes to code, with transition time
+                       when members switch. Winner will be the team to get maximum solutions accepted.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="image/CodingEvents/CodeQueen.jpg" alt="Some image" />
+						<h2 class="content__item-title">Aparoksha Presents</h2>
+					</div>
+					<h3 class="content__item-subtitle">Code Queen</h3>
+					<div class="content__item-text">
+						<p>Who says Girls can’t rock with a code? Code Queen, as the name implies, hunts for the best
+                         coder amongst girls. To promote participation of girls in the technical field we have this event
+                        exclusively for girls. Infinitum-It is an online mathematical event which gives you a great
+                           opportunity to try your hands on some exciting mathematical problems.
+                           </p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="image/CodingEvents/LangChallenge.jpg" alt="Some image" />
+						<h2 class="content__item-title">Aparoksha Presents</h2>
+					</div>
+					<h3 class="content__item-subtitle">Lang Challenge</h3>
+					<div class="content__item-text">
+						<p>To test the learning skills of the participants,a random language is provided along with tutorials
+                        needed to learn the same. Participants are required to solve a set of problems in time provided.
+                        </p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="image/CodingEvents/BlindWar.jpg" alt="Some image" />
+						<h2 class="content__item-title">Aparoksha Presents</h2>
+					</div>
+					<h3 class="content__item-subtitle">Blind War</h3>
+					<div class="content__item-text">
+						<p>
+							 Code with the screen turned off and check how accurate are you. At the end of this event, if
+                         your code runs errorlessly, you win!
+						</p>
+					</div>
+				</div><!-- /content__item -->
+				<button class="content__close">Close</button>
+				<svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
