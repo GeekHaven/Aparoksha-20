@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 body {
 	--color-text: #4800d4;
-    --color-bg: #fff;
+    --color-bg: #e8e8e8;
     --color-link: #ec1752;
     --color-link-hover: #eb1851;
     --color-info: #272526;
@@ -224,9 +224,6 @@ main {
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
 	transform-origin: 0 50%;
-	transform:translateX(0%);
-	transform: translateY(0%);
-	color:rgba(155,155,155);
 }
 
 .grid__item-number {
@@ -307,83 +304,47 @@ main {
 	padding: 0 5vw;
 	white-space: nowrap;
 	grid-area: 1 / 1 / 1 / 1;
-	animation-name: fadeAway;
-	animation-duration: .6s;
-	animation-timing-function: ease-in;
 }
-@keyframes fadeAway{
-	0%{
-		opacity: 0.5;
-	}
-	100%{
-		opacity: 0;
-	}
-}
-
 
 .content__item-title > span {
 	white-space: pre;
 	display: inline-block;
-	
 }
 
 .content__item-subtitle {
 	text-align: center;
-	font-size: 1.6rem;
-	font-weight: 800;
-	margin: 4rem auto;
-	background-image: linear-gradient(to right,rgba(25, 190, 25, 0.774),rgba(10, 117, 10, 0.801));
-    -webkit-background-clip: text;
-    -moz-background-clip:text;
-    -moz-color:transparent;
-    color:transparent;
+	font-size: 1.25rem;
+	font-weight: normal;
+	margin: 3rem auto;
 }
 
 .content__item-text {
-	text-align: center;
+	text-align: justify;
+	max-width: 800px;
 	margin: 0 auto;
-	font-size:1.3rem;
-	font-weight:500;
 }
 
 .content__item-text p {
-	margin:auto;
-	}
+	margin: 0;
+}
 
 .content__close {
 	position: absolute;
-	top: 0.25rem;
+	top: 0.75rem;
 	left: 50%;
-	height:2.5rem;
-	width:7rem;
 	z-index: 10000;
 	transform: translateX(-50%);
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
 	cursor: pointer;
-	padding:30rem 2rem;
-	text-decoration: none;
-    display:inline;
-    border:none;
-    padding:.4rem;
-    font-size:1.7rem;
-    transition:all .3s;
-    background-color:rgba(70,167,70,0.6);
-    color:white;
-    opacity:0.1;
+	color: var(--color-text);
 }
 
-.content__close:active{
-	box-shadow: 0 .7rem 1.5rem rgba(0,0,0,.5);
-    transform:translateY(-.2rem);
-    outline: none;
+.content__close:focus {
+	outline: none;
 }
-.content__close:hover{
-	background-color:rgba(167, 70, 70, 0.6);
-    color:white;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
-    transform:translateY(-.4rem);
-    border-radius: 0.06rem;
-}
-
 
 .content__item--current ~ .content__close {
 	pointer-events: auto;
