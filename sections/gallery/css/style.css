@@ -1,0 +1,257 @@
+body{
+    background:black;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #aaa;
+    overflow-x:hidden;
+    
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline
+}
+.container{
+    width: 90vw;
+    margin: 5vw;
+    
+}
+
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+  }
+  
+   .flip-box-inner:hover {
+    transform: rotateY(180deg);
+  }
+
+
+ .flip-box-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+    transform: rotateY(720deg);
+  }
+  
+
+
+
+
+
+a :hover{
+color:rgba(255, 136, 0, 0.938);
+}
+
+
+
+.container img{
+    animation-duration: 10s;
+}
+
+.container .album{
+    width:75%;
+
+    position:absolute;
+    left:11%;
+    top:20%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(130,110px);
+    grid-template-areas: 
+        "one two thr"
+        "one two thr"
+        "fou two thr"
+        "fou fiv thr"
+        "fou fiv six"
+        "fou fiv six"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e14 e14 e14"
+        "e14 e14 e14"
+        "e14 e14 e14"
+        "e14 e14 e14"
+
+        "e15 e16 e17"
+        "e15 e16 e17"
+        "e15 e16 e20"
+        "e15 e19 e20"
+        "e18 e19 e20"
+        "e18 e19 e20"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        "e27 e28 e29"
+        "e27 e28 e29"
+        "e27 e28 e29"
+        "e30 e28 e29"
+        "e30 e31 e29"
+        "e30 e31 e29"
+        "e30 e31 e29"
+        "e30 e31 e29"
+        
+        "e32 e33 e34"
+        "e32 e33 e34"
+        "e32 e33 e34"
+
+        "e35 e35 e36"
+        "e35 e35 e36"
+        "e35 e35 e36"
+        
+        "e37 e38 e38"
+        "e37 e38 e38"
+        "e37 e38 e38"
+        "e37 e38 e38"
+        "e37 e38 e38"
+
+        "e39 e39 e39"
+        "e39 e39 e39"
+        "e39 e39 e39"
+        "e39 e39 e39"
+        "e39 e39 e39"
+        "e39 e39 e39"
+        "e39 e39 e39"
+
+        "e40 e40 e41"
+        "e40 e40 e41"
+        "e40 e40 e41"
+        "e40 e40 e41"
+        "e40 e40 e41"
+        "e40 e40 e41"
+        "e40 e40 e41"
+        "e40 e40 e41"
+
+        "e42 e43 e43"
+        "e42 e43 e43"
+        "e42 e43 e43"
+        "e42 e43 e43"
+        "e42 e43 e43"
+        "e42 e43 e43"
+
+        "e44 e45 e45"
+        "e44 e45 e45"
+        "e44 e45 e45"
+        "e44 e45 e45"
+        "e44 e45 e45"
+        "e44 e45 e45"
+
+        
+        
+        "e46 e47 e48"
+        "e46 e47 e48"
+        "e46 e47 e48"
+        
+        "e49 e50 e51"
+        "e49 e50 e51"
+        "e49 e50 e51"
+        "e49 e50 e51" 
+
+        "e52 e52 e53"
+        "e52 e52 e53"
+        "e52 e52 e53"
+        "e52 e52 e53"
+        "e52 e52 e53"
+        "e52 e52 e53"
+        "e52 e52 e53"
+        "e52 e52 e53"
+        
+        "e54 e55 e55"
+        "e54 e55 e55"
+        "e54 e55 e55"
+        "e54 e55 e55"
+        "e54 e55 e55"
+
+        "e56 e56 e57"
+        "e56 e56 e57"
+        "e56 e56 e57"
+        "e56 e56 e57"
+        "e56 e56 e57"
+        "e56 e56 e57"
+         
+        "e58 e58 e59"
+        "e58 e58 e59"
+        "e58 e58 e59"
+
+        "e60 e60 e60"
+        "e60 e60 e60"
+        "e60 e60 e60"
+        "e60 e60 e60"
+        "e60 e60 e60"
+        "e60 e60 e60"
+        "e60 e60 e60"
+        "e60 e60 e60"
+        
+
+        "e61 e61 e61"
+        "e61 e61 e61"
+        "e61 e61 e61"
+        "e61 e61 e61"
+        "e61 e61 e61"
+        "e61 e61 e61"
+        "e61 e61 e61"
+        "e61 e61 e61"
+        
+        
+        
+
+        
+        
+        
+        
+        ;
+    
+        
+
+}
+.container .img{
+    background: #333;
+    background-size: cover;
+    border:1px black solid;
+    border-radius:11px;
+}   
+
+@media screen and (max-width: 727px)
+{
+    
+    body{
+       width:100%;
+       height:100%;
+       zoom:19%; 
+       overflow-x:hidden;
+       position:absolute;
+       left:0%;
+    }
+    
+    
+
+    
+}

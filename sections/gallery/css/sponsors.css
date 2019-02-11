@@ -1,0 +1,31 @@
+.thumbnail{
+display: block;
+border:none;
+margin-left:auto;
+margin-right:auto;
+width:100%;
+}
+.textstyled{
+	font-size:4.4rem;
+	margin-left: 50%;
+	transform:translate(-46%,0);
+}
+
+.col-12{
+margin-left:50%;
+transform: translate(-50%,0);
+}
+@media screen and (max-width: 767px) 
+{
+.col-12,.col-sm-6,.col-lg-4,.col-lg-12{
+margin-left:50%;
+transform:translate(-50%,0);
+background:transparent;
+width:90%;
+margin-bottom:0rem;
+}
+.textstyled{
+   font-size:3.3rem;
+   font-weight:700rem;
+}
+}

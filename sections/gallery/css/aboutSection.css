@@ -1,0 +1,90 @@
+.par{
+font-weight:800;
+font-size:1.51rem;
+letter-spacing: 0.15rem;
+font-family: 'Open Sans', sans-serif;
+ background-image: linear-gradient(to right,#c0a000,#333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip:text;
+  -moz-fill:transparent;
+}
+.newlogo{
+     animation-name:spin;
+     animation-duration:2s;
+     animation-timing-function: ease-out;
+     perspective: 150rem;/*higher the perspective better the transition*/
+     -moz-perspective:150rem;
+}
+/*.newlogo:hover{
+     animation-name:spin;
+     animation-duration:2s;
+     animation-timing-function: ease-out;
+     animation-iteration-count: infinite;
+     perspective: 150rem;/*higher the perspective better the transition
+     -moz-perspective:150rem;
+}
+*/
+@keyframes spin
+{
+     from {
+        transform:rotateY(180deg);
+    }
+    to {
+        transform:rotateY(0deg);
+    }
+}
+.anime-left{
+animation-name: moveinleft;
+animation-duration:1s;
+animation-timing-function:linear;
+}
+.anime-right{
+animation-name: moveinright;
+animation-duration:1s;
+animation-timing-function:linear;
+}
+@keyframes moveinleft{
+0%
+{
+opacity:0.3;
+transform: translateX(-5rem);
+}
+100%
+{
+opacity:1;
+transform:translateX(0);
+}
+}
+@keyframes moveinright
+{
+0%
+{
+opacity:0.3;
+transform:translateX(5rem);
+}
+100%
+{
+opacity:1;
+transform:translateX(0px);
+}
+}
+@media screen and (max-width: 450px) 
+{
+     .anime-left,.anime-right{
+          animation-name:newanimated;
+     }
+     .par{
+          letter-spacing: 0rem;
+          font-size:1.5rem;
+     }
+}
+@keyframes newanimated{
+     100%{
+          opacity:1;
+     }
+}
+.newlogo{
+margin-bottom:4rem;
+}
+
