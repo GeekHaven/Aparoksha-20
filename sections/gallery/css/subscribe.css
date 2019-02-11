@@ -1,0 +1,25 @@
+.form__input::-moz-webkit-input-placeholder{
+    margin-bottom:3px solid gray;
+}
+.form__input::-webkit-input-placeholder{
+    margin-bottom:3px solid gray;
+    color:#999;
+}
+.form__input:focus:invalid{
+    border-bottom:3px solid rgb(228, 108, 64);
+}
+.form__label{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    padding-bottom:2rem;
+    padding-top:2rem;
+    font-size:1.4rem;
+    font-weight:200;   
+    text-transform:uppercase;
+    transition:all .4s;
+}
+.form__input:placeholder-shown + .form__label{
+    opacity:0;
+    visibility: hidden;
+    transform:translateY(-4rem);
+}

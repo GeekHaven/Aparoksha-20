@@ -1,0 +1,20 @@
+#logo-spin {
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-timing-function: linear; 
+}
+
+#logo-spin :hover {
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(180deg);
+    }
+}
