@@ -103,8 +103,8 @@
 			// Configuration for when moving/tilting the elements on hover.
 			this.tiltconfig = {   
                 title: {translation : {x: [-8,8], y: [4,-4]}},
-                number: {translation : {x: [-5,5], y: [-10,10]}},
-                img: {translation : {x: [-15,15], y: [-10,10]}}
+                number: {translation : {x: [-5,5], y: [-3,3]}},
+                img: {translation : {x: [-5,5], y: [-6,6]}}
 			};
 			// Get the rotation angle value of the image element.
 			// This will be used to rotate the DOM.bg to the same value when expanding/opening the item.
@@ -132,7 +132,7 @@
 					ease: Expo.easeOut,
 					scale: type === 'mouseenter' ? 1.15 : 1
 				});
-				// Animate the number letters.
+				//Animate the number letters.
 				this.DOM.numberLetters.forEach((letter,pos) => {
 					TweenMax.to(letter, .2, {
 						ease: Quad.easeIn,
@@ -261,17 +261,16 @@
 			setTimeout(() => {
 				
 				this.DOM.titleLetters.forEach((letter,pos) => {
-					TweenMax.to(letter, !withAnimation ? 0 : show ? .6 : .3, {
+					TweenMax.to(letter,!withAnimation ? 0 : show ? 4 : 1,{
 						ease: show ? Back.easeOut : Quart.easeIn,
-						delay: !withAnimation ? 0 : show ? pos*.05 : (this.titleLettersTotal-pos-1)*.04,
-						startAt: show ? {y: '50%', opacity: 0} : null,
+						delay: !withAnimation ? 0 : show ? pos*.02 : (this.titleLettersTotal-pos-1)*0.05,
+						startAt: show ? {y: '50%', opacity: 0.9} : null,
 						y: show ? '0%' : '50%',
-						opacity: show ? 1 : 0
+						opacity: show ? 0 : 0
 					});
 				});
 				this.DOM.subtitle.style.opacity = show ? 1 : 0;
 				this.DOM.text.style.opacity = show ? 1 : 0;
-
 			}, withAnimation ? delay*1000 : 0 );
 		}
     }
