@@ -161,7 +161,7 @@ main {
 
 .grid-wrap {
 	position: relative;
-	max-width: 1100px;
+	max-width: 1300px;
 	margin: 0 auto;
 	padding: 6rem 1rem 0;
 }
@@ -174,7 +174,7 @@ main {
 .grid {
 	margin: 0 auto;
 	position: relative;
-	width:20%;
+	width:60%;
 	display: none;
 }
 
@@ -262,7 +262,7 @@ main {
 .js .content {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 120%;
 	z-index: 1000;
 }
 
@@ -388,6 +388,179 @@ main {
 }
 
 @media screen and (min-width: 55em) {
+
+
+
+	#designoff
+	{
+		position:absolute;
+		top:-3% !important;
+	}
+	#designoff .grid__item-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 110%;
+		height: 100%;
+		background: linear-gradient(45deg, rgb(53, 53, 54), rgb(20, 17, 17));
+	
+	}
+	
+	#designoff .grid__item-img {
+		pointer-events: none;
+		position: relative;
+		max-width: 120%;
+		margin: 0 auto;
+		display: block;
+		outline: 1px solid transparent;
+	}
+
+
+
+
+	#lang .grid__item-img {
+		pointer-events: none;
+		position: relative;
+		max-width: 110%;
+		margin: 0 auto;
+		display: block;
+		outline: 1px solid transparent;
+	}
+
+
+#techno
+{
+	position:absolute;
+	top:57% !important;
+	left:-0% !important;
+}
+
+
+
+
+
+#techno .grid__item-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 160%;
+	height: 110%;
+	background: linear-gradient(45deg, rgb(53, 53, 54), rgb(20, 17, 17));
+
+}
+
+#techno .grid__item-img {
+	pointer-events: none;
+	position: relative;
+	max-width: 180%;
+	
+	margin: 0 auto;
+	display: block;
+	outline: 1px solid transparent;
+}
+
+
+#techno .grid__item-number {
+	color:white;
+	font-weight: bold;
+	position: absolute;
+	left:10%;
+	top:100%;
+	right: 0;
+	bottom: 0;
+	font-size: 2.65rem;
+	margin: 0 0 0.15rem;
+}
+
+#google
+{
+	position:absolute;
+	top:5% !important;
+	left:73% !important;
+}
+
+
+#google .grid__item-bg {
+	position: absolute;
+	top: 7%;
+	left: 0;
+	width: 155%;
+	height: 100%;
+	background: linear-gradient(45deg, rgb(53, 53, 54), rgb(20, 17, 17));
+
+}
+
+#google .grid__item-img {
+	pointer-events: none;
+	position: relative;
+	max-width: 180%;
+	top:25% !important;
+	margin: 0 auto;
+	display: block;
+	outline: 1px solid transparent;
+}
+
+
+#google .grid__item-number {
+	color:white;
+	font-weight: bold;
+	position: absolute;
+	left:10%;
+	
+	top:100%;
+	right: 0;
+	bottom: 0;
+	font-size: 2.65rem;
+	margin: 0 0 0.15rem;
+}
+
+
+
+
+
+#qwerty
+{
+	position:relative;
+	top:55% !important;
+	left:55% !important;
+}
+
+
+#qwerty .grid__item-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 165%;
+	height: 100%;
+	background: linear-gradient(45deg, rgb(53, 53, 54), rgb(20, 17, 17));
+
+}
+
+#qwerty .grid__item-img {
+	pointer-events: none;
+	position:relative;
+	top:20% !important;
+	max-width: 180%;
+	margin: 0 auto;
+	display: block;
+	outline: 1px solid transparent;
+}
+
+
+#qwerty .grid__item-number {
+	color:white;
+	font-weight: bold;
+	position: absolute;
+	left:10%;
+	top:100%;
+	right: 0;
+	bottom: 0;
+	font-size: 2.65rem;
+	margin: 0 0 0.15rem;
+}
+
+
+
 	.frame {
 		display: grid;
 		align-items: start;
