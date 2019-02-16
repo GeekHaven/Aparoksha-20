@@ -14,7 +14,7 @@ body {
     --color-bg: #2b313e;
     --color-link: #59647e;
     --color-link-hover: #cc8678;
-    --color-overlay: #c69f64;
+    --color-overlay: #451a11;
     --color-tagline: #c69f64;
 	color: var(--color-text);
 	background-color: var(--color-bg);
