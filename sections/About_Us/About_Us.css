@@ -2,57 +2,77 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-}
+	color: white;
+	font-family: 'Crimson Text', serif;
+ }
+html{
+	height: 100vh; 
+/* 	overflow:hidden; */
+}  
 
-header{
+body{
+	height: 100vh; 
+/* 	overflow:hidden; */
 	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('bg4.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
-}
-
-body{
+	background-position: center;
 	font-size: 20px;
-	overflow-x: hidden;
-	color: white;
-	font-family: 'Crimson Text', serif;
+/* 	overflow-x: hidden; */
 }
 
-.logo{
-	width: 10%;
-	height: 10%;
-	margin-top: 50px;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-/*h1{
-	width: 100%;
-	color: #9a7505;
-	font-size: 300%;
-	word-spacing: 5px;
-	letter-spacing: 2px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
+.close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	height: 30px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 30px;
+	line-height: 1.4;
 	text-align: center;
-	margin: 50px;
-}*/
+}
+
+
+.about-header{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 70px;
+	left: 50%;
+	transform: translate(-50%,0);
+
+}
+.logo{
+	background-image: url(logo.svg);
+	background-position: right;
+	background-size: contain;
+	height: 60px;
+	width: 60px;
+	background-repeat: no-repeat;
+	text-align: right
+	
+	}
+.about-header h1{
+	font-size: 60px;
+	line-height:1;
+}
 
 .main-content-header{
 	width: 800px;
-	position: absolute;
-	top: 45%;
+	position: relative;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%,0);
 }
 
 span{
 	font-size: 120%;
 	color: #fff;
+}
+.content{
+	position: relative;
+	top: 140px;
 }
 
 p{
@@ -63,6 +83,8 @@ p{
 	word-spacing: 4px;
 	letter-spacing: 1px;
 	margin-bottom: 12px;
+	line-height: 1.1;
+	margin: 20px 0;
 }
 
 /*-----------Responsive Query--------------*/
@@ -70,64 +92,121 @@ p{
 @media only screen and (max-width: 1000px){
 	h1{font-size: 200%;}
 	p{font-size: 80%;}
+	/* .content{
+		position: relative;
+		top:50px;
+		line-height: 1.5;
+}   */
 }
 
-@media only screen and (max-width: 800px){
-	h1{font-size: 180%;}
+@media only screen and (max-width: 900px){
+	/* h1{font-size: 180%;} */
 	p{font-size: 75%;}
-	.logo{
-		width: 8%;
-		height: 8%;
-	}
+	/* .content{
+		position: relative;
+		top: 140px;
+	} */
 	.main-content-header{
 		width: 600px;
 	}
 }
 
 @media only screen and (max-width: 600px){
-	h1{font-size: 160%;}
-	p{font-size: 70%;}
-	.logo{
-		width: 8%;
-		height: 8%;
-	}
+	/* h1{font-size: 180%;} */
+	p{font-size: 75%;}
+	/* .content{
+		position: relative;
+		top: 340px;
+	} */
 	.main-content-header{
 		width: 500px;
 	}
 }
 
 @media only screen and (max-width: 500px){
-	h1{font-size: 140%;}
-	p{font-size: 65%;}
-	.logo{
-		width: 7%;
-		height: 7%;
-	}
+	/* h1{font-size: 160%;} */
+	p{font-size: 75%;
+	line-height: 1
+}
 	.main-content-header{
-		width: 300px;
+		width: 400px;
+	}
+	.close{
+		top: 10px;
+		right: 10px;
+		height: 20px;
+		width: 20px;
+		font-size: 15px;
+		line-height: 1.2;
+	}
+/* 	body{
+		height:120vh;
+	} */
+}
+@media only screen and (max-width: 400px){
+	/* h1{font-size: 160%;} */
+	p{font-size: 75%;
+	line-height: 1
+}
+	.main-content-header{
+		width: 350px;
 	}
 }
 
 @media only screen and (max-height: 700px){
-	h1{font-size: 120%;}
-	p{font-size: 55%;}
-	.logo{
-		width: 6%;
-		height: 6%;
+	.about-header h1{font-size: 180%;}
+	.about-header .logo{
+		height: 45px;
 	}
-	.main-content-header{
-		width: 300px;
-		height: 300px;
+	p{
+	font-size: 70%;
+	line-height: 1
+	}
+	.content{
+		top: 50px;
+	}
+	p{
+	word-spacing: 2px;
+	letter-spacing: 0px;
+	margin: 15px  0;
+}
+.about-header{
+	top: 40px;
+}
+	
+}	
+
+/* ==================animation================== */
+.fadeInLeft{
+	animation-name: aleft;
+	animation-duration: 1s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes aleft{
+	0%{
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
 	}
 }
 
+.fadeInRight{
+	animation-name: aright;
+	animation-duration: 1s;
+	animation-fill-mode: forwards; 
+}
 
-
-
-
-
-
-
-
-
-
+@keyframes aright{
+	0%{
+		transform: translateX(+50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
