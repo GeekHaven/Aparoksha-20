@@ -5,6 +5,33 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	box-sizing: border-box;
 }
 
+
+body {
+	--color-text: #99a3bb;
+    --color-bg: #2b313e;
+    --color-link: #59647e;
+    --color-link-hover: #cc8678;
+    --color-overlay: #451a11;
+    --color-tagline: #c69f64;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: Futura, 'IBM Plex Sans', Arial, sans-serif;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.body-new::before {
+	content: '\00D7';
+	font-size: 300vw;
+	color: rgba(0,0,0,0.05);
+	position: fixed;
+	top: 0vh;
+	left: -50%;
+	line-height: 0.2;
+	font-weight: normal;
+}
+/*
 body {
 	--color-text: #4800d4;
     --color-bg: black;
@@ -211,14 +238,16 @@ main {
 	margin: 0 auto;
 	display: block;
 	outline: 1px solid transparent;
+	height: 340px;
+
 }
 
 .grid__item:nth-child(even) .grid__item-img {
-	transform: rotate3d(0,0,1,4deg);
+	/*transform: rotate3d(0,0,1,4deg);*/
 }
 
 .grid__item:nth-child(odd) .grid__item-img {
-	transform: rotate3d(0,0,1,-4deg);
+	/*transform: rotate3d(0,0,1,-4deg);*/
 }
 
 .grid__item-title {

@@ -42,14 +42,14 @@
 		return { x : posx, y : posy }
 	};
 	// Returns the rotation angle of an element.
-	const getAngle = (el) => {
+	/*const getAngle = (el) => {
 		const st = window.getComputedStyle(el, null);
 		const tr = st.getPropertyValue('transform');
 		let values = tr.split('(')[1];
 		values = values.split(')')[0];
 		values = values.split(',');
 		return Math.round(Math.asin(values[1]) * (180/Math.PI));
-	};
+	};*/
 	// Scroll control functions. Taken from https://stackoverflow.com/a/4770179.
 	const keys = {37: 1, 38: 1, 39: 1, 40: 1};
 	const preventDefault = (e) => {
@@ -108,7 +108,7 @@
 			};
 			// Get the rotation angle value of the image element.
 			// This will be used to rotate the DOM.bg to the same value when expanding/opening the item.
-			this.angle = getAngle(this.DOM.tilt.img);
+			//this.angle = getAngle(this.DOM.tilt.img);
 			// Init/Bind events.
             this.initEvents();
 		}
