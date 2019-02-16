@@ -181,9 +181,9 @@
             this.DOM.textEl = this.DOM.el.querySelector('span.content__text-inner');
             this.style = {
                 family : "'Goblin One',serif",
-                size : 130,
-                paddingLeft: 40,
-                paddingRight: 40,
+                size : 25,
+                paddingLeft: 10,
+                paddingRight: 30,
                 paddingTop: 40,
                 paddingBottom: 40,
                 fill : "#c69f64"

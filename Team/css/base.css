@@ -14,7 +14,7 @@ body {
     --color-bg: #2b313e;
     --color-link: #59647e;
     --color-link-hover: #cc8678;
-    --color-overlay: #451a11;
+    --color-overlay: #c69f64;
     --color-tagline: #c69f64;
 	color: var(--color-text);
 	background-color: var(--color-bg);
@@ -177,6 +177,13 @@ a:focus {
 .content__text {
 	position: absolute;
 	font-size: 10vw;
+}
+
+.content__text__teamtype {
+	position: absolute;
+	font-size: 2em;
+	padding: 10px;
+	color: #c69f64;
 }
 
 .js .content__text-inner {
