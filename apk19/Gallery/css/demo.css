@@ -262,82 +262,26 @@ div {
     background-image: url(../images/site\ header\ events.png);
 }
 
+.page-header {
+    height: 650px;
+    padding: 100px 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+
 .title-heading {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
     position: relative;
-    top: 0;
+    top: 150px;
 }
 
 .title-heading h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     font-family: PfefferMediaeval;
     color: #fff;
     letter-spacing: 4px;
-}
-
-.page-header {
-    height: 550px;
-    padding: 80px 0 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover !important;
-}
-
-.page-header .entry-title {
-    font-size: 42px;
-    font-weight: bold;
-    color: #fff;
-}
-
-@media screen and (min-width: 576px){
-    .page-header {
-        height: 300px;
-    }
-
-     .title-heading h1 {
-        font-size: 5.5rem;
-    }
-}
-
-@media screen and (min-width: 992px){
-    .page-header {
-        height: 400px;
-        padding: 150px 0;
-    }
-
-    .page-header .entry-title {
-        font-size: 72px;
-    }
-
-}
-
-@media screen and (min-width: 1200px){
-    .page-header {
-        height: 610px;
-        padding: 240px 0;
-    }
-
-}
-
-.events-page-header {
-    background-image: url("../images/site\ header\ events.png");
-}
-
-.single-event-page-header {
-    background-image: url("../images/site\ header\ events.png");
-}
-
-.events-news-page-header {
-    background-image: url("../images/site\ header\ events.png");
-}
-
-.contact-page-header {
-    background-image: url("../images/site\ header\ events.png");
-}
-
-.elements-page-header {
-    background-image: url("../images/site\ header\ events.png");
 }
