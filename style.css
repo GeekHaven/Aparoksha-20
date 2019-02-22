@@ -33,6 +33,7 @@ body {
     color: #2f2f2f;
     font-family: 'Lato', Calibri, Arial, sans-serif;;    
     overflow-x: hidden;
+    background-image: linear-gradient(to bottom, #0f0741, #110a40, #130c3f, #150e3e, #17103d)
 }
 
 img {
