@@ -23,19 +23,15 @@
 }
 /***********************************Scrollbar end*****************************/
 
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @font-face {
-    font-family: 'Calibri';
-    src: url('fonts/Calibri.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Calibri.woff') format('woff'),
-    url('fonts/Calibri.ttf')  format('truetype'),
-    url('fonts/Calibri.svg#Calibri') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: PfefferMediaeval;
+    src: url("./apk19/Gallery/font/pfeffer-mediaeval/PfefferMediaeval.otf") format("opentype");
 }
 
 body {
     color: #2f2f2f;
-    font-family: 'Calibri';    
+    font-family: 'Lato', Calibri, Arial, sans-serif;;    
     overflow-x: hidden;
 }
 
@@ -1127,6 +1123,7 @@ a:hover, a:active {
 
 .page-header .entry-title {
     font-size: 42px;
+    font-family: "PfefferMediaeval";
     font-weight: bold;
     color: #fff;
 }
