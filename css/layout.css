@@ -243,13 +243,13 @@ body{
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(330deg, #0066ff, #693ba8, #5d1f5e); ;
+    background: grey ;
     border-radius: 10px;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background:linear-gradient(330deg, #0066ff, #693ba8, #5d1f5e); ;
+    background:#222 ;
   }
   /***********************************Scrollbar end*****************************/
 
