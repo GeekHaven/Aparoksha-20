@@ -272,15 +272,15 @@ div {
 }
 
 .title-heading h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: PfefferMediaeval;
     color: #fff;
     letter-spacing: 4px;
 }
 
 .page-header {
-    height: 250px;
-    padding: 100px 0 0;
+    height: 550px;
+    padding: 80px 0 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover !important;
@@ -297,8 +297,8 @@ div {
         height: 300px;
     }
 
-    .page-header .entry-title {
-        font-size: 52px;
+     .title-heading h1 {
+        font-size: 5.5rem;
     }
 }
 
@@ -316,8 +316,8 @@ div {
 
 @media screen and (min-width: 1200px){
     .page-header {
-        height: 525px;
-        padding: 200px 0;
+        height: 610px;
+        padding: 240px 0;
     }
 
 }
