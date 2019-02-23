@@ -1,3 +1,8 @@
+@font-face {
+    font-family: PfefferMediaeval;
+    src: url("pfeffer-mediaeval/PfefferMediaeval.otf") format("opentype");
+}
+
 article,
 aside,
 details,
@@ -392,7 +397,7 @@ main {
 }
 
 .content__title {
-    font-family: "sabbath-black", serif;
+    font-family: PfefferMediaeval;
     font-size: 8vw;
     font-weight: normal;
     mix-blend-mode: screen;
@@ -400,7 +405,7 @@ main {
     text-transform: lowercase;
     margin: 0;
     color: var(--color-title);
-    z-index: 399;
+    z-index: 499;
     cursor: default;
 }
 
@@ -413,7 +418,7 @@ main {
     word-spacing: 0.25rem;
     text-transform: uppercase;
     text-align: center;
-    z-index: 199;
+    z-index: 299;
     cursor: default;
 }
 
