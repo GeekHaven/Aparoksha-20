@@ -195,7 +195,7 @@
         layout() {
             let inner = '';
             for (let i = 0; i <= this.layersTotal-1; ++i) {
-                inner +=  '<div class="background__copy" style="background-image: url(img/apkbg4.jpg)"></div>';
+                inner +=  '<div class="background__copy"></div>';
             }
             this.DOM.main.innerHTML = inner;
             this.DOM.layers = Array.from(this.DOM.main.querySelectorAll('.background__copy'));

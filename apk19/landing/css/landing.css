@@ -810,7 +810,7 @@ main {
 header .home-social-list {
     position: absolute;
     left: 18px;
-    top: 670px;
+    top: 58vh;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -850,7 +850,7 @@ header .home-social-list li a:hover,
 .one-pager_navigation {
     position: absolute;
     z-index: 100;
-    bottom: 20px;
+    top: 60vh;
     right: 1rem;
 }
 
@@ -962,3 +962,78 @@ nav ul {
 .one-pager__navigation .navigation__anchor--active .navigation__anchor-text {
     opacity: 1;
 }
+
+.action--menu i{
+    font-size: 1.6rem;
+} 
+
+@media screen and (max-width: 850px) {
+    .background,
+    .background__copy{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url(../img/apkbg3.jpg);
+        /* background-position: 50% 0%; */
+        background-size: cover;
+        background-position: center top;
+        z-index: 1;
+
+    }
+
+    .one-pager_navigation{
+        position: absolute;
+        bottom: -45vh;
+        right: 0rem;
+        display: none;
+    }
+
+    .content{
+        display: flex;
+        flex-flow: column;
+        padding-top: 4vh;
+    }
+    .codrops-header{
+        top: -70px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .navigation_anchor-text{
+            font-size: 0.9rem;
+    }
+
+    .content__title{
+        font-size: 65px;
+    }
+    .content__tagline{
+        font-size: 1.1rem;
+    }
+    .header-logo a{
+        height: 50px;
+        width: 50px;
+        background-size: 50px 
+    }
+    header .home-social-list {
+    top: 60vh;
+    font-size: 1.3rem;
+    line-height: 1.75;
+    left: 92vw;
+
+    }
+    .home-social-list li{
+        margin: -5px
+    }
+    .action--menu i{
+        margin-right: -10px;
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+  }
+
+
+
+
