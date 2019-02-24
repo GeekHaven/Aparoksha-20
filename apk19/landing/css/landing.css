@@ -810,7 +810,7 @@ main {
 header .home-social-list {
     position: absolute;
     left: 18px;
-    top: 58vh;
+    top: 68vh;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -850,7 +850,7 @@ header .home-social-list li a:hover,
 .one-pager_navigation {
     position: absolute;
     z-index: 100;
-    top: 60vh;
+    top: 70vh;
     right: 1rem;
 }
 
