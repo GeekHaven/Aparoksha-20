@@ -1033,7 +1033,12 @@ nav ul {
     }
 
   }
-
+@media screen and (max-height: 570px){
+    
+    header .home-social-list {
+        top: 55vh;
+    }
+  }
 
 
 
