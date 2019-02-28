@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>  
+		<script src="js/modernizr.custom.70736.js"></script>
+		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+			<header class="site-header">
+				<div class="header-bar">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-10 col-lg-2 order-lg-1">
+								<div class="site-branding">
+									<div class="site-title">
+										<a href="#"><img src="images/logo.svg" alt="logo" ></a>
+									</div><!-- .site-title -->
+								</div><!-- .site-branding -->
+							</div><!-- .col -->
+							<div class="col-10 col-lg-2 order-lg-1">
+							<div class="close-btn">
+								<a href="#"><img src="images/close1.svg" alt="close"></a>
+							</div>
+							</div>
+						</div><!-- .row -->
+					</div><!-- .container-fluid -->
+				</div><!-- .header-bar -->
+			
+				<div class="page-header single-event-page-header">
+					<div class="title-heading">
+								<h1>About Us</h1>
+								<!-- <h3>La la type textline..</h3> -->
+					</div>
+                </div>
+            </header><!-- .site-header -->
+        
+        <div class="content">
+            <p class="fadeInLeft"><span>Aparoksha</span> is the Annual Technical Festival of <span>IIIT Allahabad</span> (A Centre of Excellence in Information Technology established by Ministry of HRD, Govt. of India).</p>
+            <p class="fadeInRight">A collaboration of, for and by tech enthusiasts, Aparoksha is a platform for technocrats to code, design and build innovative solutions to transform India into a digitally empowered society and a knowledge based economy, all while providing a venue for self-expression and creativity.</p>
+
+            <p class="fadeInLeft">Aparoksha boasts a plethora of intensive and gripping technical events. To name a few, Aparoksha is home to Hack In the North, the largest student held Hackathon in North India organised by <span>GitHub</span> and <span>TopCoder</span>. Aparoksha also holds TopCoder <span>Humblefool Cup</span>,a 2-tier ACM-ICPC style national level coding contest organised in the honour of Harsha Suryanarayana, an alumnus of IIIT Allahabad, known to the world as one of the greatest coders India has ever produced.</p>
+
+            <p class="fadeInRight">The previous iterations of Aparoksha have seen eminent personalities from various walks of life coming to deliver talks on a diverse range of topics, as well as various performances-cum-events like The Comedy Night, <span>EDM Night</span> and <span>After Party</span>.</p>
+
+            <p class="fadeInLeft">Technology is best when it brings people together'. In keeping with this motto, Aparoksha also organises a Tech Tour, an initiative taken by the Technical Society of IIIT Allahabad to conduct workshops and talks in various schools and colleges across India to increase technical awareness, build enthusiasm in people and give back to the society.</p>
+        </div>
+    </div>
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="js/jquery.masonry.min.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/js-url.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/gamma.js"></script>
+		<script type="text/javascript">
+			
+			$(function() {
+
+				var GammaSettings = {
+						// order is important!
+						viewport : [ {
+							width : 1200,
+							columns : 5
+						}, {
+							width : 900,
+							columns : 4
+						}, {
+							width : 500,
+							columns : 3
+						}, { 
+							width : 320,
+							columns : 2
+						}, { 
+							width : 0,
+							columns : 2
+						} ]
+				};
+
+				Gamma.init( GammaSettings, fncallback );
+
+
+				// Example how to add more items (just a dummy):
+
+				var page = 0,
+					items = ['<li>	<div data-alt="img03" data-description="<h3>startup intern affair</h3>" data-max-width="1800" data-max-height="1350">	<div data-src="images/xxxlarge/34.jpg" data-min-width="1300"></div>	<div data-src="images/xxlarge/34.jpg" data-min-width="1000"></div>	<div data-src="images/xlarge/34.jpg" data-min-width="700"></div>	<div data-src="images/large/34.jpg" data-min-width="300"></div>	<div data-src="images/medium/34.jpg" data-min-width="200"></div>	<div data-src="images/small/34.jpg" data-min-width="140"></div>	<div data-src="images/xsmall/34.jpg"></div>	<noscript><img src="images/xsmall/34.jpg" alt="img03"/>	</noscript></div></li>']
+
+				function fncallback() {
+
+					$( '#loadmore' ).show().on( 'click', function() {
+
+						++page;
+						var newitems = items[page-1]
+						if( page <= 1 ) {
+							
+							Gamma.add( $( newitems ) );
+
+						}
+						if( page === 1 ) {
+
+							$( this ).remove();
+
+						}
+
+					} );
+
+				}
+
+			});
+
+		</script>	
+	</body>
+</html>
