@@ -1,0 +1,95 @@
+span{
+	font-size: 120%;
+	color: #fff;
+} 
+body{
+    height: 100vh;
+}
+.content{
+    max-width: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-5%);
+}
+
+p{
+    line-height: 1.5;
+    margin: 30px;
+	color: #fff;
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+	font-size: 1.3em;
+	word-spacing: 4px;
+    letter-spacing: 1px;
+} 
+
+
+/* ==================animation================== */
+.fadeInLeft{
+	animation-name: aleft;
+	animation-duration: 1s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes aleft{
+	0%{
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.fadeInRight{
+	animation-name: aright;
+	animation-duration: 1s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes aright{
+	0%{
+		transform: translateX(+50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+/* /////// Media Query //////////// */
+
+@media only screen and (max-width: 600px){
+        .page-header .title-heading h1{
+            font-size: 5rem;
+        }
+        .content p{
+            font-size: 15px;
+        }
+        .site-title img{
+            height: 40px;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+        }
+
+        .close-btn img{
+            height: 20px;
+            position: absolute;
+            top: -30px;
+            right: -40px;
+        }
+}
+
+@media only screen and (max-width: 380px){
+    .page-header .title-heading h1{
+        font-size: 4rem;
+    }
+    .content p{
+        font-size: 3.5vw;
+    }
+
+}
