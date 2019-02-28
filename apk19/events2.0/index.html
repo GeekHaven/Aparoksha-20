@@ -213,6 +213,27 @@
 @media screen and (max-width: 727px)
 {
 
+	.close-btn a img{
+				width:6vw !important;
+				position:relative;
+				top:-17vw;
+				left:16vw;
+			}
+			.site-title a img {
+				width:15vw;
+				position:relative;
+				top:-17vw;
+				left:-12vw;
+			}
+
+			.title-heading h1{
+				font-size:18vw;
+				position:relative;
+				top:7vw;
+			}
+
+
+
 .modal-content a {
   color: black;
   padding: 12px 16px;
@@ -866,27 +887,27 @@
 						<a id="myBtnmenu"  ><i id="filter" class="fas fa-filter"></i></a>
 						 <div id="myModalmenu" class="modal">
 							<div class="modal-content">
-								<span class="close" id="closemenu">&times;</span>
+							
 								<div  style=" text-align:center;font-size:8vw;" >
-								<p><a href="#flagshipevent">FLAGSHIP</a></p>
+								<p><a href="#flagshipevent" onclick="displaynone()">FLAGSHIP</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
 							
-								<p><a href="#specialevent">SPECIAL</a></p>
+								<p><a href="#specialevent" onclick="displaynone()">SPECIAL</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
 							
-								<p><a href="#codingevent">CODING</a></p>
+								<p><a href="#codingevent" onclick="displaynone()">CODING</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
 							
-								<p><a href="#quizzingevent" >QUIZZING</a></p>
+								<p><a href="#quizzingevent" onclick="displaynone()">QUIZZING</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
 							
-								<p><a href="#gamingevent">GAMING</a></p>
+								<p><a href="#gamingevent" onclick="displaynone()">GAMING</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
 							
-								<p><a href="#informalevent">INFORMAL</a></p>
+								<p><a href="#informalevent" onclick="displaynone()">INFORMAL</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
 							
-								<p><a href="#topmost">GO TO TOP</a></p>
+								<p><a href="#topmost" onclick="displaynone()">GO TO TOP</a></p>
 							
 							</div>
 							</div>
@@ -1527,6 +1548,14 @@
 		<script src="js/gamma.js"></script>
 		<script type="text/javascript">
 			
+
+			function displaynone()
+			{
+				document.getElementById("myModalmenu").style.display="none";
+			}
+
+
+
 			$(function() {
 
 				var GammaSettings = {
