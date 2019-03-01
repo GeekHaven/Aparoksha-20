@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8"/>
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
+        <link rel="shortcut icon" href="../favicon.ico"> 
+				<link rel="stylesheet" type="text/css" href="css/base.css" />
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+				<link rel="stylesheet" type="text/css" href="css/style.css"/>
+				<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+		    <script src="js/modernizr.custom.70736.js"></script>
+		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+  
+	<style>
+	
+			html{
+   
+	 overflow-x:hidden; 
+	 overflow-y:auto;
+	 width:100%;
+}
+
+ /************GRID************/
+  
+.container3{
+	width: 90vw;
+	 margin: 5vw ;
+	margin-left:13vw;
+	margin-top:3vw;
+}
+
+.container3 img{
+   animation-duration: 10s;
+}
+
+.container3 .album{
+   width:60vw;
+   
+ 
+
+
+   display: grid;
+   grid-gap: 0.3vw;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(41,8vw);
+   grid-template-areas: 
+	   "one one one one"
+		 "two two two two"
+		 "two two two two"
+		 "thr thr thr thr"
+		"e4 e4 e5 e5"
+		"e4 e4 e5 e5"
+		"e6 e6 e6 e6"
+		"e6 e6 e6 e6"
+		"e7 e7 e7 e7"
+		"e8 e8 e8 e8"
+		"e8 e8 e8 e8"
+		"e21 e21 e21 e21"
+		"e21 e21 e21 e21"
+		"e9 e9 e9 e9"
+		"e10 e10 e10 e10"
+		"e10 e10 e10 e10"
+		"e11 e11 e11 e11"
+		"e12 e12 e12 e12"
+		"e12 e12 e12 e12"
+		"e13 e13 e13 e13"
+		"e14 e14 e15 e15"
+		"e14 e14 e15 e15"
+		"e16 e16 e16 e16"
+		"e16 e16 e16 e16"
+		"e17 e17 e17 e17"
+		"e18 e18 e18 e18"
+		"e18 e18 e18 e18"
+		"e19 e19 e19 e19"
+		"e20 e20 e20 e20"
+		"e20 e20 e20 e20"
+		"e22 e22 e22 e22"
+		"e23 e23 e23 e23"
+		"e23 e23 e23 e23"
+		"e24 e24 e24 e24"
+		"e24 e24 e24 e24"
+		"e25 e25 e25 e25"
+		"e25 e25 e25 e25"
+		"e26 e26 e26 e26"
+		"e26 e26 e26 e26"
+		"e27 e27 e27 e27"
+		"e28 e28 e28 e28"
+		"e28 e28 e28 e28"
+		"e29 e29 e29 e29"
+		"e29 e29 e29 e29"
+	   ;
+   
+	   
+
+}
+.container3 .img{
+   /* background: #333; */
+   background-size: cover;
+   /* border:1px black solid; */
+}   
+
+#up
+{
+	position:fixed;
+	top:47vw;left:93vw;
+	display:block;
+	z-index:99999;
+}
+
+.main
+{
+	/* background-color:black; */
+	margin:0 auto;
+	max-width: 85vw;;
+}
+
+
+.title-heading h1{
+				
+				position:relative;
+				top:0.5vw;
+				left:40vw
+			}
+
+.mobileview{
+	display:none;
+}
+@media screen and (max-width: 727px)
+{
+
+	.close-btn a img{
+				width:6vw !important;
+				position:relative;
+				top:-17vw;
+				left:16vw;
+			}
+			.site-title a img {
+				width:15vw;
+				position:relative;
+				top:-17vw;
+				left:-12vw;
+			}
+
+			.title-heading h1{
+				font-size:18vw;
+				position:relative;
+				top:7vw;
+			}
+
+
+
+
+   h1 {
+		 position:relative;
+		 left:33vw !important;
+		 top:10vw !important;
+		 font-size:22vw !important;
+	 }
+
+	 
+ div.container2
+ {
+	 width:71%;
+	 height:3%;
+	margin: 0 auto;
+	 padding: 2em 1em;
+	 text-align: center;
+	 margin-bottom:6%;
+	 margin-top:2%;
+	 border: 1px solid white;
+ }
+
+ .desktopview
+ {
+	 display:none;
+ }
+
+ .mobileview
+ {
+	 display:block;
+ }
+
+
+
+.container3{
+	width: 77vw;
+	margin:0 auto;
+	 /* margin: 5vw ;
+	margin-left:10vw;
+	margin-top:3vw; */
+}
+
+.container3 img{
+   animation-duration: 10s;
+}
+
+.container3 .album{
+   width:70vw;
+   margin: 0 auto;
+   display: grid;
+   grid-gap: 4vw;
+   grid-template-columns: repeat(1,4fr);
+   grid-template-rows: repeat(5,10vw);
+   grid-template-areas: 
+	   "one"
+	   "one"
+	   "one"  
+		 "one"
+	   ;
+}
+.container3 .img{
+   /* background: #333; */
+   background-size: cover;
+   /* border:1px black solid; */
+}   
+
+
+} 
+
+
+
+
+			</style>
+	
+	
+	</head>
+
+	<!-- onscroll="displayup() -->
+
+    <body  id="maincontent100"  >
+        <div class="container">
+			<header class="site-header">
+				<div class="header-bar">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div >
+								<div id="topmost" class="site-branding">
+									<div class="site-title">
+										<a href="#"><img src="images/logo.svg" alt="logo" ></a>
+									</div><!-- .site-title -->
+								</div><!-- .site-branding -->
+							</div><!-- .col -->
+							<div >
+							<div class="close-btn closeicon">
+								<a href="#"><img src="images/close1.svg" alt="close"></a>
+							</div>
+							</div>
+						</div><!-- .row -->
+					</div><!-- .container-fluid -->
+				</div><!-- .header-bar -->
+			
+				<div class="page-header single-event-page-header">
+					<div class="title-heading">
+								<h1 >Sponsors</h1>
+								<!-- <h3>La la type textline..</h3> -->
+					</div>
+				</div>
+			</header><!-- .site-header -->
+			
+
+
+
+				
+
+
+					  <div class="main" style="margin:0 auto;">
+
+
+						
+				
+						
+						<div class="desktopview">
+						<div class="container3" >
+							<div class="album">
+								<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+									<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:16vw;"> Online Tickecting Partner</div>	
+								</div>
+								<div  class="img hovereffect photo" style="grid-area:two;background-position: centre;">
+									<a href="https://www.thecollegefever.com/"><img class="img-responsive" src="image/img1.png" style="position:relative;top:2.2vw;left:17.5vw;;width:43%;height:70%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area: thr;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:18vw;"> Online Media Partners</div>	
+							</div>
+							<div  class="img hovereffect photo" style="grid-area: e4;background-position: centre;">
+								<a href="https://www.carhp.com/"><img class="img-responsive" src="image/img3.jpg" style="position:relative;top:3.5vw;left:8.8vw;width:40%;height:60%" alt=""></a>
+							</div>
+							
+							<div  class="img hovereffect photo" style="grid-area:e5;background-position: centre;">
+								<a href="https://zoutons.com/in"><img class="img-responsive" src="image/img4.png" style="position:relative;left:7vw;;width:50%;height:100%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e6;background-position: centre;">
+							<a href="https://collegedunia.com/"><img class="img-responsive" src="image/img2.png" style="position:relative;left:10vw;top:2vw;;width:70%;height:80%" alt=""></a>
+						  </div>
+							<div  class="img hovereffect photo" style="grid-area: e7;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:14vw;"> Internship and Training Partners</div>	
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e8;background-position: centre;">
+								<a href="https://internshala.com/"><img class="img-responsive" src="image/img5.png" style="position:relative;left:9.9vw;top:2vw;width:65%;height:75%" alt=""></a>
+						  </div>
+							<div  class="img hovereffect photo" style="grid-area:e9;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:20vw;"> Education Partner</div>	
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e10;background-position: centre;">
+								<a href="https://www.madeeasy.in/"><img class="img-responsive" src="image/img6.png" style="position:relative;left:8.5vw;top:4vw;;width:70%;height:50%" alt=""></a>
+						  </div>
+							<div  class="img hovereffect photo" style="grid-area: e11;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:18vw;"> Youth Outreach Partner</div>	
+							</div>
+								
+							<div  class="img hovereffect photo" style="grid-area:e12;background-position: centre;">
+								<a href="https://www.aiesec.in/"><img class="img-responsive" src="image/img7.png" style="position:relative;left:9vw;top:3vw;;width:70%;height:50%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e13;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:25vw;"> Patrons</div>	
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e14;background-position: centre;">
+								<a href="https://www.redbus.in/"><img class="img-responsive" src="image/img8.png" style="position:relative;left:7.5vw;top:1.7vw;;width:50%;height:80%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e15;background-position: centre;">
+								<a href="https://www.toppr.com/"><img class="img-responsive" src="image/img99.png" style="position:relative;left:7vw;top:2vw;;width:50%;height:70%" alt=""></a>
+						  </div>
+							<div  class="img hovereffect photo" style="grid-area:e16;background-position: centre;">
+								<a href="https://www.sketchapp.com/"><img class="img-responsive" src="image/img10.png" style="position:relative;left:16vw;top:2vw;;width:50%;height:90%" alt=""></a>
+						  </div>
+							<div  class="img hovereffect photo" style="grid-area:e17;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:17vw;"> Design Education Partner</div>	
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e18;background-position: centre;">
+								<a href="https://www.interaction-design.org/"><img class="img-responsive" src="image/img12.1.gif" style="position:relative;left:21vw;width:30%;height:90%" alt=""></a>
+						  </div>
+							<div  class="img hovereffect photo" style="grid-area:e19;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:23vw;"> Poker Partner </div>	
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e20;background-position: centre;">
+								<a href="https://www.9stacks.com/"><img class="img-responsive" src="image/img13.png" style="position:relative;left:17vw;top:1vw;width:45%;height:90%" alt=""></a>
+						  </div>
+							<div  class="img hovereffect photo" style="grid-area:e21;background-position: centre;">
+								<a href="http://www.e1os.org/eng/index.html"><img class="img-responsive" src="image/img14.png" style="position:relative;left:15vw;;width:50%;height:90%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e22;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:18vw;"> Digital Media Partners</div>	
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e23;background-position: centre;">
+								<a href="https://yourstory.com/"><img class="img-responsive" src="image/img15.png" style="position:relative;left:5.7vw;top:2vw;width:80%;height:70%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e24;background-position: centre;">
+								<a href="https://www.wittyfeed.tv/"><img class="img-responsive" src="image/img16.png" style="position:relative;left:6vw;top:3vw;width:80%;height:70%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e25;background-position: centre;">
+							<a href="https://www.geeksmate.io/"><img class="img-responsive" src="image/img17.png" style="position:relative;left:6vw;top:3vw;width:80%;height:70%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e26;background-position: centre;">
+								<a href="https://www.duniadigest.com/"><img class="img-responsive" src="image/img18.png" style="position:relative;left:14vw;top:4vw;;width:50%;height:40%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e27;background-position: centre;">
+								<div style="margin:0 auto;font-size:3vw;font-family: 'ZCOOL QingKe HuangYou', cursive;position:relative;top:1.7vw;left:23vw;"> Other Partners </div>	
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e28;background-position: centre;">
+								<a href="https://www.ieee.org/"><img class="img-responsive" src="image/img19.png" style="position:relative;left:8vw;width:70%;height:80%" alt=""></a>
+							</div>
+							<div  class="img hovereffect photo" style="grid-area:e29;background-position: centre;">
+								<a href="https://zebronics.com/"><img class="img-responsive" src="image/LOGO.png" style="position:relative;left:8vw;width:70%;height:80%" alt=""></a>
+							</div>
+							
+									</div>
+						</div>
+					</div>
+
+
+					<div class="mobileview">
+
+					
+<!-- -----------------------Online ticketing partner--------------------- -->
+							<div  style="font-size:6vw;margin-left:12vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+								Online Ticketing Partner
+							</div>
+													
+							<div class="container3" >
+								<div class="album">
+									<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+											<a href="https://www.thecollegefever.com/"><img class="img-responsive" src="image/img1.png" style="position:relative;left:1vw;;top:9vw;width:100%;height:60%" alt=""></a>
+									</div>
+											</div>
+									</div>
+<!-- -----------------------Online ticketing partner--------------------- -->
+
+<!-- --------------------------Online Media Partner--------------------- -->
+						<div  style="font-size:6vw;margin-left:15vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+							Online Media Partners
+						</div>
+
+						<div class="container3" >
+							<div class="album">
+								<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+									<a href="https://www.carhp.com/"><img class="img-responsive" src="image/img3.jpg" style="position:relative;;width:100%;height:100%" alt=""></a>
+								</div>
+										</div>
+								</div>
+					
+
+					<div class="container3" style="margin-top:-14vw;">
+						<div class="album">
+							<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+								<a href="https://zoutons.com/in"><img class="img-responsive" src="image/img4.png" style="position:relative;left:1vw;;top:9vw;width:100%;height:60%" alt=""></a>
+							</div>
+									</div>
+							</div>
+				
+
+				<div class="container3" style="margin-top:-35vw;">
+					<div class="album">
+						<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+							<a href="https://collegedunia.com/"><img class="img-responsive" src="image/img2.png" style="position:relative;top:9vw;width:100%;height:60%" alt=""></a>
+						</div>
+								</div>
+						</div>
+<!-- --------------------------Online Media Partner--------------------- -->
+
+<!-- ---------------------Internship and training------------------------- -->
+<div  style="font-size:6vw;margin-left:5vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+Internship and training Partners
+</div>
+
+<div class="container3" >
+	<div class="album">
+		<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+			<a href="https://internshala.com/"><img class="img-responsive" src="image/img5.png" style="position:relative;top:5vw;;width:100%;height:60%" alt=""></a>
+		</div>
+				</div>
+		</div>
+
+
+<div class="container3" style="margin-top:-30vw;">
+<div class="album">
+	<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+		<a href="http://www.e1os.org/eng/index.html"><img class="img-responsive" src="image/img14.png" style="position:relative;left:8vw;top:9vw;width:80%;height:60%" alt=""></a>
+	</div>
+			</div>
+	</div>
+<!-- ---------------------Internship and training------------------------- -->
+
+<!-- ------------------------Education Partner ----------------------->
+<div  style="font-size:6vw;margin-left:20vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+	Education Partner
+</div>
+
+
+<div class="container3" >
+	<div class="album">
+		<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+			<a href="https://www.madeeasy.in/"><img class="img-responsive" src="image/img6.png" style="position:relative;left:;top:14vw;width:100%;height:40%" alt=""></a>
+		</div>
+				</div>
+		</div>
+<!-- --------------------Education partner-------------------------- -->
+
+
+<!-- ----------------Youth Out-------------------------------------- -->
+<div  style="font-size:6vw;margin-left:14vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+	Youth Outreach Partner
+</div>
+<div class="container3" >
+	<div class="album">
+		<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+			<a href="https://www.aiesec.in/"><img class="img-responsive" src="image/img7.png" style="position:relative;left:;top:16vw;width:100%;height:30%" alt=""></a>
+		</div>
+				</div>
+		</div>
+
+<!-- ----------------Youth Out-------------------------------------- -->
+
+
+<!-- ------------------Patrons------------------- -->
+<div  style="font-size:6vw;margin-left:29vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+	Patrons
+</div>
+			<div class="container3" >
+				<div class="album">
+					<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+						<a href="https://www.redbus.in/"><img class="img-responsive" src="image/img8.png" style="position:relative;left:7vw;top:6vw;width:80%;height:80%" alt=""></a>
+					</div>
+							</div>
+		</div>
+			<div class="container3" style="margin-top:-13vw;">
+				<div class="album">
+					<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+						<a href="https://www.toppr.com/"><img class="img-responsive" src="image/img99.png" style="position:relative;left:11vw;top:7vw;width:70%;height:70%" alt=""></a>
+					</div>
+							</div>
+					</div>
+				<div class="container3" style="margin-top:-13vw;">
+					<div class="album">
+						<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+							<a href="https://www.sketchapp.com/"><img class="img-responsive" src="image/img10.png" style="position:relative;left:;top:10vw;width:100%;height:70%" alt=""></a>
+						</div>
+								</div>
+						</div>
+
+<!-- ------------------Patrons------------------- -->
+
+<!-- ----------------_Desgin------------------- -->
+<div  style="font-size:6vw;margin-left:13vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+	Design Education Partner
+</div>
+<div class="container3" >
+	<div class="album">
+		<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+			<a href="https://www.interaction-design.org/"><img class="img-responsive" src="image/img12.1.gif" style="position:relative;left:;top:;width:100%;height:100%" alt=""></a>
+		</div>
+				</div>
+		</div>
+<!-- ----------------_Desgin------------------- -->
+
+<!-- -----------------Poker------------ -->
+<div  style="font-size:6vw;margin-left:22vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+	Poker Partner
+</div>
+<div class="container3" >
+	<div class="album">
+		<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+			<a href="https://www.9stacks.com/"><img class="img-responsive" src="image/img13.png" style="position:relative;left:;top:;width:100%;height:100%" alt=""></a>
+		</div>
+				</div>
+		</div>
+
+<!-- -----------------Poker------------ -->
+
+
+
+
+<!-- -------------Digital Media Partners----------- -->
+<div  style="font-size:6vw;margin-left:13vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+	Digital Media Partners
+</div>
+
+<div class="container3" >
+	<div class="album">
+		<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+			<a href="https://yourstory.com/"><img class="img-responsive" src="image/img15.png" style="position:relative;left:;top:12vw;width:100%;height:50%" alt=""></a>
+		</div>
+				</div>
+</div>
+<div class="container3" style="margin-top:-33vw;">
+	<div class="album">
+		<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+			<a href="https://www.wittyfeed.tv/"><img class="img-responsive" src="image/img16.png" style="position:relative;left:;top:12vw;width:100%;height:50%" alt=""></a>
+		</div>
+				</div>
+		</div>
+	<div class="container3" style="margin-top:-33vw;">
+		<div class="album">
+			<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+				<a href="https://www.geeksmate.io/"><img class="img-responsive" src="image/img17.png" style="position:relative;left:;top:12vw;width:100%;height:50%" alt=""></a>
+			</div>
+					</div>
+			</div>
+
+			<div class="container3" style="margin-top:-33vw;">
+				<div class="album">
+					<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+						<a href="https://www.duniadigest.com/"><img class="img-responsive" src="image/img18.png" style="position:relative;left:;top:17vw;width:100%;height:30%" alt=""></a>
+					</div>
+							</div>
+					</div>
+
+<!-- -------------Digital Media Partners----------- -->
+
+<!-- -----------others------------------ -->
+<div  style="font-size:6vw;margin-left:20vw;position:relative;top:-6vw; font-family: 'ZCOOL QingKe HuangYou', cursive;">
+	Others Partners
+</div>
+
+<div class="container3" >
+	<div class="album">
+		<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+			<a href="https://www.ieee.org/"><img class="img-responsive" src="image/img19.png" style="position:relative;left:;top:12vw;width:100%;height:50%" alt=""></a>
+		</div>
+				</div>
+		</div>
+	<div class="container3" style="margin-top:-33vw;">
+		<div class="album">
+			<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
+				<a href="https://zebronics.com/"><img class="img-responsive" src="image/LOGO.png" style="position:relative;left:;top:18vw;width:100%;height:30%" alt=""></a>
+			</div>
+					</div>
+			</div>
+
+<!-- -----------others------------------ -->
+
+
+
+
+
+			</div>
+		</div>			
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="js/jquery.masonry.min.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/js-url.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/gamma.js"></script>
+		<script type="text/javascript">
+			
+
+			function displaynone()
+			{
+				document.getElementById("myModalmenu").style.display="none";
+			}
+
+
+
+			$(function() {
+
+				var GammaSettings = {
+						// order is important!
+						viewport : [ {
+							width : 1200,
+							columns : 5
+						}, {
+							width : 900,
+							columns : 4
+						}, {
+							width : 500,
+							columns : 3
+						}, { 
+							width : 320,
+							columns : 2
+						}, { 
+							width : 0,
+							columns : 2
+						} ]
+				};
+
+				Gamma.init( GammaSettings, fncallback );
+
+
+				// Example how to add more items (just a dummy):
+
+				var page = 0,
+					items = ['<li><div data-alt="img03" data-description="<h3>codered</h3>" data-max-width="1800" data-max-height="1350">	<div data-src="images/xxxlarge/32.jpg" data-min-width="1300"></div>	<div data-src="images/xxlarge/32.jpg" data-min-width="1000"></div>	<div data-src="images/xlarge/32.jpg" data-min-width="700"></div>	<div data-src="images/large/32.jpg" data-min-width="300"></div>	<div data-src="images/medium/32.jpg" data-min-width="200"></div>	<div data-src="images/small/32.jpg" data-min-width="140"></div>	<div data-src="images/xsmall/32.jpg"></div>	<noscript>	<img src="images/xsmall/32.jpg" alt="img03"/>	</noscript></div></li><li>	<div data-alt="img03" data-description="<h3>electrobuzz</h3>" data-max-width="1800" data-max-height="1350">	<div data-src="images/xxxlarge/33.jpg" data-min-width="1300"></div>	<div data-src="images/xxlarge/33.jpg" data-min-width="1000"></div>	<div data-src="images/xlarge/33.jpg" data-min-width="700"></div>	<div data-src="images/large/33.jpg" data-min-width="300"></div>	<div data-src="images/medium/33.jpg" data-min-width="200"></div>	<div data-src="images/small/33.jpg" data-min-width="140"></div>	<div data-src="images/xsmall/33.jpg"></div>	<noscript>		<img src="images/xsmall/33.jpg" alt="img03"/>	</noscript>	</div></li><li>	<div data-alt="img03" data-description="<h3>startup intern affair</h3>" data-max-width="1800" data-max-height="1350">	<div data-src="images/xxxlarge/34.jpg" data-min-width="1300"></div>	<div data-src="images/xxlarge/34.jpg" data-min-width="1000"></div>	<div data-src="images/xlarge/34.jpg" data-min-width="700"></div>	<div data-src="images/large/34.jpg" data-min-width="300"></div>	<div data-src="images/medium/34.jpg" data-min-width="200"></div>	<div data-src="images/small/34.jpg" data-min-width="140"></div>	<div data-src="images/xsmall/34.jpg"></div>	<noscript><img src="images/xsmall/34.jpg" alt="img03"/>	</noscript></div></li>']
+
+				function fncallback() {
+
+					$( '#loadmore' ).show().on( 'click', function() {
+
+						++page;
+						var newitems = items[page-1]
+						if( page <= 1 ) {
+							
+							Gamma.add( $( newitems ) );
+
+						}
+						if( page === 1 ) {
+
+							$( this ).remove();
+
+						}
+
+					} );
+
+				}
+
+			});
+
+		// function 	displayup()
+		// 	{
+		// 			var a=document.getElementById("maincontent100");
+		// 			document.getElementById("up").style.display="block";
+		// 	}
+
+
+
+
+
+
+		</script>	
+	</body>
+</html>
