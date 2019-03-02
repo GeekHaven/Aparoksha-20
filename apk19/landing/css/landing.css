@@ -800,7 +800,7 @@ main {
     padding: 0;
     width: 90px;
     height: 84px;
-    background: url(../img/logo.png) no-repeat center;
+    background: url(../img/logo.svg) no-repeat center;
     background-size: 90px 84px;
     text-shadow: none;
     color: transparent;
@@ -810,13 +810,14 @@ main {
 header .home-social-list {
     position: absolute;
     left: 18px;
-    top: 68vh;
+    bottom: 10px;
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 1.6rem;
     line-height: 1.75;
     text-align: center;
+    z-index: 190;
 }
 
 header .home-social-list::before {
@@ -850,7 +851,7 @@ header .home-social-list li a:hover,
 .one-pager_navigation {
     position: absolute;
     z-index: 100;
-    top: 70vh;
+    bottom: 15px;
     right: 1rem;
 }
 
@@ -924,7 +925,7 @@ nav ul {
     display: block;
     transform: translateZ(0);
     transition: all 0.3s;
-    font-size: 1.2rem;
+    font-size: 1.3vw;
 }
 
 /* .navigation_anchor:after {
@@ -965,7 +966,30 @@ nav ul {
 
 .action--menu i{
     font-size: 1.6rem;
-} 
+}
+
+.bottom-buttons{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 0;
+    z-index: 190;
+    transform: translate(-50%,0);
+    border-left: 1px solid #fff;
+    margin: 0;
+}
+.bottom-buttons button{
+    background: none;
+    color: #fff;
+    border: none;
+    border-right: 1px solid #fff;
+    height: 6vh;
+    width: 10vw;
+    padding: 0;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
 @media screen and (max-width: 850px) {
     .background,
@@ -1017,7 +1041,7 @@ nav ul {
         background-size: 50px 
     }
     header .home-social-list {
-    top: 63vh;
+    bottom: 15px;
     font-size: 1.3rem;
     line-height: 1.75;
     left: 92vw;
@@ -1032,13 +1056,20 @@ nav ul {
         font-size: 1.5rem;
     }
 
-  }
-@media screen and (max-height: 570px){
-    
-    header .home-social-list {
-        top: 55vh;
+    .bottom-buttons button{
+        font-size: 13px;
+        width: 90px;
     }
+
   }
+
+  @media screen and (max-height: 650px){
+    .one-pager_navigation{
+        display: none;
+    }
+
+  }
+
 
 
 
