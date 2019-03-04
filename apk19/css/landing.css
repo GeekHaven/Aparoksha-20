@@ -594,7 +594,7 @@ main {
     text-align: left;
     align-self: flex-start;
     justify-self: start;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 100%;
     line-height: 1;
     padding: 2rem;
@@ -608,7 +608,7 @@ main {
     content: '\27F6';
     display: block;
     margin-top: auto;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
 }
 
 @media screen and (min-width: 53em) {
@@ -701,7 +701,7 @@ main {
         color: var(--color-item-alt);
         position: absolute;
         z-index: 1000;
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         font-weight: bold;
         margin: 0;
         white-space: nowrap;
