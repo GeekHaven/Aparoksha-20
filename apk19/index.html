@@ -13,8 +13,126 @@
 		<link rel="stylesheet" type="text/css" href="css/spin.css" />
 		<style>img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;} </style>
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	
+		<style>
+				@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+		 .loading2 {
+		   position: fixed;
+		   top: 0;
+		   left: 0;
+		   width: 100%;
+		   height: 100%;
+		   background: #0b0b0b;
+		   z-index: 9999;
+		 }
+		 
+		 .loading2-text {
+		   position: absolute;
+		   top: 0;
+		   bottom: 0;
+		   left: 0;
+		   right: 0;
+		   margin: auto;
+		   text-align: center;
+		   width: 100%;
+		   height: 100px;
+		   line-height: 100px;
+		 }
+		 .loading2-text span {
+		   display: inline-block;
+		   margin: 0 5px;
+		   color: #fff;
+		   font-size: 2.2rem;
+		   font-family: 'Quattrocento Sans', sans-serif;
+		 }
+		 .loading2-text span:nth-child(1) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 0s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(2) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 0.2s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(3) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 0.4s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(4) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 0.6s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(5) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 0.8s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(6) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 1s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(7) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 1.2s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(8) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 1.4s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(9) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 1.6s infinite linear alternate;
+		 }
+		 .loading2-text span:nth-child(10) {
+		   filter: blur(0px);
+		   animation: blur-text 1.7s 1.8s infinite linear alternate;
+		 }
+		 
+		 @keyframes blur-text {
+		   0% {
+			 filter: blur(0px);
+		   }
+		   100% {
+			 filter: blur(4px);
+		   }
+		 }
+
+
+			@media screen and (max-width: 727px)
+			{
+
+		 .loading2-text span {
+		   display: inline-block;
+		   margin: 0 5px;
+		   color: #fff;
+		   font-size: 1rem;
+		   font-family: 'Quattrocento Sans', sans-serif;
+		 }
+			}
+
+
+		 
+			 </style>
+	
+	
+	
 	</head>
-	<body class="loading">
+	<body onload="displayloader()" >
+
+			<div class="loading2" id="loader">
+					<div class="loading2-text">
+						<span >A</span>
+						<span >P</span>
+						<span >A</span>
+						<span >R</span>
+						<span >O</span>
+						<span >K</span>
+						<span >S</span>
+					<span >H</span>
+					<span >A</span>
+					<span >19</span>
+					</div>
+				</div>
+
+
 		<header>
 				<ul class="home-social-list">
 						<li><a href="https://www.facebook.com/aparoksha"><i class="fab fa-facebook"></i></a></li>
@@ -188,6 +306,14 @@
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo.js"></script>
 		<script>
+
+			function displayloader()
+			{
+				document.getElementById("loader").style.display="none"
+			}
+
+
+
 			var slides = document.querySelectorAll('#slides .slide');
 			var currentSlide = 0;
 			var slideInterval = setInterval(nextSlide,2500);
