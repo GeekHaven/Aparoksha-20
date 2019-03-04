@@ -1049,9 +1049,17 @@ nav ul {
 .upper_text{
     text-align: center;
     font-size: 1rem;
-    margin: 50px;
-    /* margin-left: 400px; */
+    margin-bottom: 50px;
+    position: relative;
+    right: -12%;
+    /* transform: translateX(12vw); */
 }
+
+ @media screen and (max-width: 1250px){
+    .upper_text{
+        transform: translateX(-6vw);
+    }
+} 
 
 
 @media screen and (max-width: 850px) {
@@ -1069,7 +1077,9 @@ nav ul {
         z-index: 1;
 
     }
-
+    .upper_text{
+        transform: translateX(-8vw);
+    }    
     .one-pager_navigation{
         position: absolute;
         bottom: -45vh;
