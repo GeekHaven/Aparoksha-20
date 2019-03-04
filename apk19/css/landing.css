@@ -977,7 +977,7 @@ nav ul {
     border-left: 1px solid #fff;
     margin: 0;
 }
-.bottom-buttons button{
+.bottom-buttons a{
     background: none;
     color: #fff;
     border: none;
@@ -988,6 +988,7 @@ nav ul {
     font-size: 1.2vw;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center
 }
 
 #slides {
