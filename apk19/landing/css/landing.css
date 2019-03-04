@@ -549,14 +549,13 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../img/map2.jpg) no-repeat 50% 50%;
+    background: #333;
     background-size: cover;
     transition: transform 0.8s cubic-bezier(0.2, 1, 0.8, 1);
 }
-
-.menu__item-inner:hover .menu__item-map {
+/* .menu__item-inner:hover .menu__item-map {
     transform: scale3d(1.1, 1.1, 1);
-}
+} */
 
 .menu__item-hoverlink {
     font-weight: bold;
@@ -990,6 +989,52 @@ nav ul {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+#slides {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    font-size: 40px;
+}
+.slide .layer{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    height: calc(100% + 1px);
+    width: calc(100% + 1px);
+}
+.slide .text{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 2px;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+}
+
 
 @media screen and (max-width: 850px) {
     .background,
