@@ -115,7 +115,15 @@
 				<div class="menu__item menu__item--2" data-direction="lr">
 					<div class="menu__item-inner">
 						<div class="menu__item-map"></div>
-						<a href="#" class="menu__item-hoverlink">APAROKSHA MONTH</a>
+						<!-- <a href="#" class="menu__item-hoverlink">APAROKSHA MONTH</a>
+						 -->
+						 <ul id="slides">
+								<li class="slide showing" style="background-image: url('./img/slideshow/39031435330_b1ae520386_z.jpg')"><div class="layer"><div class="text">Top Bot</div></div></li>
+								<li class="slide" style="background-image: url('./img/slideshow/39979108485_2149e0a61e_z.jpg')"><div class="layer"><div class="text">CodeRed</div></div></li>
+								<li class="slide" style="background-image: url('./img/slideshow/40151988214_e8c6652102_z.jpg')"><div class="layer"><div class="text">Comedy Night</div></div></li>
+								<li class="slide" style="background-image: url('./img/slideshow/40152312284_7b5d18f661_z.jpg')"><div class="layer"><div class="text">Frag Fest</div></div></li>
+								<li class="slide" style="background-image: url('./img/slideshow/40857999761_feb5deab96_z.jpg')"><div class="layer"><div class="text">Confab</div></div></li>
+						 </ul>
 					</div>
 				</div>
 				<div class="menu__item menu__item--3" data-direction="bt">
@@ -155,5 +163,16 @@
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo.js"></script>
+		<script>
+			var slides = document.querySelectorAll('#slides .slide');
+			var currentSlide = 0;
+			var slideInterval = setInterval(nextSlide,2500);
+
+			function nextSlide() {
+				slides[currentSlide].className = 'slide';
+				currentSlide = (currentSlide+1)%slides.length;
+				slides[currentSlide].className = 'slide showing';
+			}
+		</script>
 	</body>
 </html>
