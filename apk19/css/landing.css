@@ -398,27 +398,27 @@ main {
 
 .content__title {
     font-family: PfefferMediaeval;
-    font-size: 8vw;
+    font-size: 9vw;
     font-weight: normal;
     mix-blend-mode: screen;
     line-height: 0.8;
     text-transform: lowercase;
-    margin: 0;
+    margin: 5px;
     color: var(--color-title);
-    z-index: 499;
+    z-index: 799;
     cursor: default;
 }
 
 .content__tagline {
     color: var(--color-tagline);
     margin: 1rem 0 0 0;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.5rem;
     letter-spacing: 0.125rem;
-    word-spacing: 0.25rem;
+    word-spacing: 0.45rem;
     text-transform: uppercase;
     text-align: center;
-    z-index: 299;
+    z-index: 399;
     cursor: default;
 }
 
