@@ -985,22 +985,38 @@ nav ul {
     bottom: 0;
     z-index: 190;
     transform: translate(-50%,0);
-    border-left: 1px solid #fff;
     margin: 10px;
 }
 .bottom-buttons a{
     background: none;
     color: #fff;
     border: none;
-    border-right: 1px solid #fff;
+    border: 2px solid #f3f3f3;
+    margin: 2px;
     height: 6vh;
     width: 10vw;
-    padding: 0; 
+    padding: 0px;
     font-size: 1.2vw;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-align: center
+    text-align: center;
 }
+
+.bottom-buttons a:hover{
+    background: #f3f3f3;
+    color: #222;
+    border: none;
+    border: 2px solid #f3f3f3;
+    margin: 3px;
+    height: 6vh;
+    width: 10vw;
+    padding: 0px;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
 
 #slides {
     position: relative;
