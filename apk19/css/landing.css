@@ -553,7 +553,6 @@ main {
     background-size: cover;
     transition: transform 0.8s cubic-bezier(0.2, 1, 0.8, 1);
 }
-<<<<<<< HEAD:apk19/landing/css/landing.css
 .menu__item-map1 {
     width: 100%;
     height: 100%;
@@ -565,9 +564,6 @@ main {
     transition: transform 0.8s cubic-bezier(0.2, 1, 0.8, 1);
 }
 .menu__item-inner:hover .menu__item-map {
-=======
-/* .menu__item-inner:hover .menu__item-map {
->>>>>>> 04b6bd091951f0443025ae85326bef7074829d6b:apk19/css/landing.css
     transform: scale3d(1.1, 1.1, 1);
 } */
 
