@@ -15,6 +15,19 @@
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
   
 	<style>
+		
+		body {
+  
+  padding: 0px;
+  margin: 0px;
+	width:100%;
+	height: 100%;
+overflow-y:scroll;	
+}
+
+
+
+/***********Loader****************/
 	.fa-plus {
 		font-size: 2em;
 	}
@@ -145,12 +158,7 @@
   cursor: pointer;
 }
 /**********MODAL**************/
-			html{
-   
-	 overflow-x:hidden; 
-	 overflow-y:auto;
-	 width:100%;
-}
+			
 /* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"); */
  
  /************GRID************/
@@ -463,7 +471,8 @@
 							</div><!-- .col -->
 							<div >
 							<div class="close-btn closeicon">
-								<a href="#"><img src="images/close1.svg" alt="close"></a>
+								<a href="../index.html" onclick="displayloaderup()"><img src="images/close1.svg" alt="close"></a>
+
 							</div>
 							</div>
 						</div><!-- .row -->
@@ -2574,6 +2583,10 @@
 			}
 
 
+			 function displayloaderup()
+			{
+				document.getElementById("loader").style.display="block";
+			}
 
 			$(function() {
 

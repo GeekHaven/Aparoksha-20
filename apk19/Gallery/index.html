@@ -127,7 +127,7 @@
 							</div><!-- .col -->
 							<div class="col-10 col-lg-2 order-lg-1">
 							<div class="close-btn">
-								<a href="../index.html"><img src="images/close1.svg" alt="close"></a>
+								<a href="../index.html"><img onclick="displayloaderup()" src="images/close1.svg" alt="close"></a>
 							</div>
 							</div>
 						</div><!-- .row -->
@@ -694,6 +694,10 @@
 				document.getElementById("loader").style.display="none";
 			}
 
+			function displayloaderup()
+			{
+				document.getElementById("loader").style.display="block";
+			}
 			$(function() {
 
 				var GammaSettings = {
