@@ -1044,7 +1044,7 @@ nav ul {
     font-size: 40px;
 }
 .slide .layer{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4));
     height: calc(100% + 1px);
     width: calc(100% + 1px);
 }
