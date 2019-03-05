@@ -28,6 +28,59 @@ overflow-y:scroll;
 
 
 /***********Loader****************/
+
+.spin-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #0b0b0b;
+	z-index:999999;
+}
+.spin-wrapper .spinner {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border: 4px solid transparent;
+  border-top-color: #d127a7;
+  top: 50%;
+  left: 50%;
+  margin: -30px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+.spin-wrapper .spinner:before, .spin-wrapper .spinner:after {
+  content: '';
+  position: absolute;
+  border: 4px solid transparent;
+  border-radius: 50%;
+}
+.spin-wrapper .spinner:before {
+  border-top-color: #003366;
+  top: -12px;
+  left: -12px;
+  right: -12px;
+  bottom: -12px;
+  animation: spin 3s linear infinite;
+}
+.spin-wrapper .spinner:after {
+  border-top-color: #FFFBFE;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/***********Loader****************/
+
 	.fa-plus {
 		font-size: 2em;
 	}
@@ -456,8 +509,12 @@ overflow-y:scroll;
 
 	<!-- onscroll="displayup() -->
 
-    <body  id="maincontent100"  >
-        <div class="container">
+    <body  id="maincontent100" onload="displayloader()"  >
+				<div class="spin-wrapper" id="loader">
+						<div class="spinner">
+						</div>
+					</div>
+        <div class="container" style="z-index:100 !important;">
 			<header class="site-header">
 				<div class="header-bar">
 					<div class="container-fluid">
@@ -465,7 +522,7 @@ overflow-y:scroll;
 							<div >
 								<div id="topmost" class="site-branding">
 									<div class="site-title">
-										<a href="#"><img src="images/logo.svg" alt="logo" ></a>
+										<a href="../index.html"><img src="images/logo.svg" alt="logo" ></a>
 									</div><!-- .site-title -->
 								</div><!-- .site-branding -->
 							</div><!-- .col -->
@@ -1503,12 +1560,15 @@ overflow-y:scroll;
 								<p><a href="#quizzingevent" onclick="displaynone()">QUIZZING</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
 							
-								<p><a href="#webdevevent" onclick="displaynone()">WEB DEV EVENTS</a></p>
+								<p><a href="#webdevevent" onclick="displaynone()">WEB DEV</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
 							
-								<p><a href="#appdevevent" onclick="displaynone()">APP DEV EVENTS</a></p>
+								<p><a href="#appdevevent" onclick="displaynone()">APP DEV</a></p>
 								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
-								<p><a href="#informalevent" onclick="displaynone()">INFORMAL EVENTS</a></p>
+								<p><a href="#informalevent" onclick="displaynone()">INFORMAL</a></p>
+								<div style="border-top:0.4vw black solid;width:69vw;position:relative;left:3.7vw;top:0vw"></div>
+								<p><a href="#topmost" onclick="displaynone()">GO TO TOP</a></p>
+								
 							
 							</div>
 							</div>
@@ -1636,8 +1696,6 @@ overflow-y:scroll;
 						</div>
 						<div class="container3" >
 							<div class="album">
-
-
 								<div  class="img hovereffect" style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/CFresh.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:42%;">
@@ -1671,13 +1729,18 @@ overflow-y:scroll;
 								</div>
 							</div>
 						</div>
-						<div class="container3">
+
+
+
+
+						<div class="container3" >
 							<div class="album">
 								<div  class="img hovereffect" style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/3Musketeersjpg.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:42%;">
 										<h2>	<a id="myBtn33"   style="cursor:pointer;font-family:'Source Code Pro', monospace;"><i style="" class="fas fa-plus"></i></a></h2>					
 										<div id="myModal33" class="modal">
+
 												<!-- Modal content -->
 												<div class="modal-content">
 													<span style="color:black;" id="close33" class="close"><img src="cross.png" style="width:1vw;margin-top:0.5vw"></span>
@@ -1685,33 +1748,33 @@ overflow-y:scroll;
 													</p>
 													<p><div style="border-top:2.5px #330867 solid;width:99.5%;position:relative;top:0.6vw"></div>
 													</p>
-												 <p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw;font-family:'Lato', sans-serif;;font-weight:800;">A coding contest but with an exciting twist.Complete your teammate’s code and see if you really make a good team. Each member of the team gets 15 minutes to code, with transition time when members switch. Winner will be the team to get maximum solutions accepted.</p>
-												 <p class="para2" style="text-align:left;margin-top:1vw !important;padding-right:2vw;font-family: 'Lato',sans-serif;font-weight:600;">Prizes Worth:<span style="color:red;font-family: 'Lato',sans-serif;">&#8377 18K</span></p>
-												 <p class="c-article-title" style="text-align:left;margin-top:1vw !important;padding-right:2vw;">Rules</p>
-												 <p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family: 'Lato', sans-serif;font-weight:700;"> To be updated soon. </p>
-												
+													<p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw;font-family:'Lato', sans-serif;;font-weight:800;">A coding contest but with an exciting twist.Complete your teammate’s code and see if you really make a good team. Each member of the team gets 15 minutes to code, with transition time when members switch. Winner will be the team to get maximum solutions accepted.</p>
+													<p class="para2" style="text-align:left;margin-top:1vw !important;padding-right:2vw;font-family: 'Lato',sans-serif;font-weight:600;">Prizes Worth:<span style="color:red;font-family: 'Lato',sans-serif;">&#8377 18K</span></p>
+													<p class="c-article-title" style="text-align:left;margin-top:1vw !important;padding-right:2vw;">Rules</p>
+													<p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family: 'Lato', sans-serif;font-weight:700;"> To be updated soon. </p>
 												 
-												 <button type="button" class="polySecond poly1" style="margin-top:.9vw;position:relative;font-family:sans-serif;padding: 5px;" onclick="">Register Now!</button>
-												 <p class="c-article-title" style="text-align:left;margin-top:1vw !important;padding-right:2vw;font-family: 'Lato',sans-serif;">Organisers</p>
-												 <p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family:'Lato',sans-serif;font-weight:700;">Amit KS - 8830608685</p>
-												 <p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family:'Lato',sans-serif;font-weight:700;">Shivam Falok - 7404241232</p>
-												  <p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family:'Lato',sans-serif;font-weight:700;">Rohit - 981329960</p>
-												 <p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family:'Lato',sans-serif;font-weight:700;">Samanwaya - 7678833462</p>												
+													
+													<button type="button" class="polySecond poly1" style="margin-top:.9vw;position:relative;font-family:sans-serif;padding: 5px;" onclick="">Register Now!</button>
+													<p class="c-article-title" style="text-align:left;margin-top:1vw !important;padding-right:2vw;font-family: 'Lato',sans-serif;">Organisers</p>
+													<p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family:'Lato',sans-serif;font-weight:700;">Amit KS - 8830608685</p>
+													<p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family:'Lato',sans-serif;font-weight:700;">Shivam Falok - 7404241232</p>
+													 <p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family:'Lato',sans-serif;font-weight:700;">Rohit - 981329960</p>
+													<p class="para" style="text-align:left;margin-top:1vw !important;padding-right:2vw; font-family:'Lato',sans-serif;font-weight:700;">Samanwaya - 7678833462</p>												 
 												</div>
 											</div>
 										</div>
 								</div>
 							</div>
 						</div>
-						<div class="container3">
-							<div clas="album">
 
-
+						<div class="container3" >
+							<div class="album">
 								<div  class="img hovereffect" style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/CodeQueen.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:42%;">
 										<h2>	<a id="myBtn34"   style="cursor:pointer;font-family:'Source Code Pro', monospace;"><i style="" class="fas fa-plus"></i></a></h2>					
 										<div id="myModal34" class="modal">
+
 												<!-- Modal content -->
 												<div class="modal-content">
 													<span style="color:black;" id="close34" class="close"><img src="cross.png" style="width:1vw;margin-top:0.5vw"></span>
@@ -1737,6 +1800,8 @@ overflow-y:scroll;
 								</div>
 							</div>
 						</div>
+
+
 						<div class="container3" >
 							<div class="album">
 
@@ -2574,16 +2639,18 @@ overflow-y:scroll;
     }
   });
 });
-			function displaynone()
+function displayloader()
 			{
-				document.getElementById("myModalmenu").style.display="none";
+				document.getElementById("loader").style.display="none";
+				// document.getElementById("maincontent").style.display="block";
+
 			}
-
-
-			 function displayloaderup()
+			function displayloaderup()
 			{
 				document.getElementById("loader").style.display="block";
+				// document.getElementById("maincontent").style.display="none";
 			}
+
 
 			$(function() {
 
