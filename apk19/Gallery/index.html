@@ -19,6 +19,7 @@
   
   padding: 0px;
   margin: 0px;
+	overflow-y: hidden;
 }
 
 
@@ -107,12 +108,12 @@
 	
 	
 	</head>
-		<body onload="displayloader()">
+		<body onload="displayloader()" id="mainbody">
 				<div class="spin-wrapper" id="loader">
 						<div class="spinner">
 						</div>
 					</div>
-		<div class="container" style="z-index:100 !important;" >
+		<div class="container">
 			
 				
 
@@ -693,13 +694,18 @@
 			
 			function displayloader()
 			{
-				document.getElementById("loader").style.display="none";
-			}
+				setTimeout(function(){document.getElementById("loader").style.display="none";
+				document.getElementById("mainbody").style.overflowY="scroll"},2000)
+				
+				// document.getElementById("maincontent").style.display="block";
 
+			}
 			function displayloaderup()
 			{
 				document.getElementById("loader").style.display="block";
+				document.getElementById("mainbody").style.overflowY="hidden"
 			}
+
 			$(function() {
 
 				var GammaSettings = {

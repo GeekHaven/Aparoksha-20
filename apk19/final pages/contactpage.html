@@ -22,7 +22,7 @@
   margin: 0px;
 	width:100%;
 	height: 100%;
-overflow-y:scroll;	
+overflow-y:hidden;	
 }
 
 
@@ -174,7 +174,7 @@ overflow-y:scroll;
 
 	<!-- onscroll="displayup() -->
 
-    <body  id="maincontent100" onload="displayloader()" >
+    <body  id="mainbody" onload="displayloader()" >
 
 				<div class="spin-wrapper" id="loader">
 						<div class="spinner">
@@ -183,7 +183,7 @@ overflow-y:scroll;
 
 
 
-        <div class="container" style="z-index:100 !important;">
+        <div class="container" >
 			<header class="site-header">
 				<div class="header-bar">
 					<div class="container-fluid">
@@ -290,20 +290,20 @@ overflow-y:scroll;
 		<script type="text/javascript">
 			
 
-			function displaynone()
-			{
-				document.getElementById("myModalmenu").style.display="none";
-			}
-
 			function displayloader()
 			{
-				document.getElementById("loader").style.display="none";
-			}
+				setTimeout(function(){document.getElementById("loader").style.display="none";
+				document.getElementById("mainbody").style.overflowY="scroll"},2000)
+				
+				// document.getElementById("maincontent").style.display="block";
 
-			 function displayloaderup()
+			}
+			function displayloaderup()
 			{
 				document.getElementById("loader").style.display="block";
+				document.getElementById("mainbody").style.overflowY="hidden"
 			}
+
 
 			$(function() {
 
