@@ -16,7 +16,6 @@
   
 	<style>
 		
-
 		body {
   
   padding: 0px;
@@ -35,7 +34,7 @@ overflow-y:hidden;
   width: 100%;
   height: 100vh;
   background: #0b0b0b;
-	z-index:999999;
+	z-index:9999999;
 }
 .spin-wrapper .spinner {
   position: absolute;
@@ -83,111 +82,6 @@ overflow-y:hidden;
 /***********Loader****************/
 
 
-		body {
-  
-  padding: 0px;
-  margin: 0px;
-}
-
-
-/***********Loader****************/
-
-.spin-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #0b0b0b;
-}
-.spin-wrapper .spinner {
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  border: 4px solid transparent;
-  border-top-color: #d127a7;
-  top: 50%;
-  left: 50%;
-  margin: -30px;
-  border-radius: 50%;
-  animation: spin 2s linear infinite;
-}
-.spin-wrapper .spinner:before, .spin-wrapper .spinner:after {
-  content: '';
-  position: absolute;
-  border: 4px solid transparent;
-  border-radius: 50%;
-}
-.spin-wrapper .spinner:before {
-  border-top-color: #003366;
-  top: -12px;
-  left: -12px;
-  right: -12px;
-  bottom: -12px;
-  animation: spin 3s linear infinite;
-}
-.spin-wrapper .spinner:after {
-  border-top-color: #FFFBFE;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
-  animation: spin 4s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/***********Loader****************/
-
-
-
-/**********MODAL**************/
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 999999; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-}
-
-/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"); */
- 
- /************GRID************/
-  
-.container3 video{
-	
-	 position:relative;
-	 left:-2vw !important;
-	 width:50vw;
-}
-
-.container3 .album{
-	border-radius: 10% !important;
-	 
-   width:45vw;
-   margin: 0 auto;
-   display: grid;
-   grid-gap: 0vw;
-   grid-template-columns: repeat(1,4fr);
-   grid-template-rows: repeat(10,9vw);
-   grid-template-areas: 
-	   "one"
-	   "one"
-		"one"
-	   ;
-}
 .main
 {
 	/* background-color:black; */
@@ -195,19 +89,21 @@ overflow-y:hidden;
 	max-width: 85vw;;
 }
 
-.mobileview{
+.mobile{
 	display:none;
 }
+
+
 .title-heading h1{
-				font-size:5vw;
+				
 				position:relative;
-				top:1vw !important;
-				left:40vw !important;
+                font-size:5vw;
+				top:1.3vw;
+				left:40vw
 			}
 
 @media screen and (max-width: 727px)
 {
-
 
 	.close-btn a img{
 				width:6vw !important;
@@ -223,17 +119,15 @@ overflow-y:hidden;
 			}
 
 			.title-heading h1{
-				font-size:18vw !important;
+				font-size:13vw !important;
 				position:relative;
-				top:10vw !important;
-				left:33vw !important;
+				top:7vw;
+                left:36vw !important;
 			}
 
 
-	#up
-	{
-		display:none;
-	}
+
+
    h1 {
 		 position:relative;
 		 left:33vw !important;
@@ -242,57 +136,36 @@ overflow-y:hidden;
 	 }
 
 	 
- div.container2
- {
-	 width:71%;
-	 height:3%;
-	margin: 0 auto;
-	 padding: 2em 1em;
-	 text-align: center;
-	 margin-bottom:6%;
-	 margin-top:2%;
-	 border: 1px solid white;
- }
-/* 
  .desktop
  {
 	 display:none;
- } */
+ }
 
- .mobileview
+ .mobile
  {
 	 display:block;
  }
 
+ .horizontal
+ {
+	 border-top:1px solid white;
+	 margin-bottom: 1vw;
+	margin-top:2vw;
+ }
 
-
- .container3 video{
-	
-	
-	width:50vw;
-	border:2px white solid;
-}
-
-.container3 .album{
- border-radius: 10% !important;
-	
-	width:45vw;
-	margin: 0 auto;
-	display: grid;
-	grid-gap: 0vw;
-	grid-template-columns: repeat(1,4fr);
-	grid-template-rows: repeat(100,9vw);
-	grid-template-areas: 
-		"one"
-		"one"
-	 "one"
-		;
-}
 
 } 
 
 
 
+.vertical
+{
+    border-left:1px solid white;
+    height:27vw;
+    position:relative;
+    left:37vw;
+    top:-21.5vw !important;
+}
 
 			</style>
 	
@@ -301,8 +174,7 @@ overflow-y:hidden;
 
 	<!-- onscroll="displayup() -->
 
-		<body  id="mainbody" onload="displayloader()" >
-			
+    <body  id="mainbody" onload="displayloader()" >
 
 				<div class="spin-wrapper" id="loader">
 						<div class="spinner">
@@ -325,7 +197,7 @@ overflow-y:hidden;
 							</div><!-- .col -->
 							<div >
 							<div class="close-btn closeicon">
-								<a href="../index.html"><img onclick="displayloaderup()" src="images/close1.svg" alt="close"></a>
+								<a href="../index.html" onclick="displayloaderup()"><img src="images/close1.svg" alt="close"></a>
 							</div>
 							</div>
 						</div><!-- .row -->
@@ -334,14 +206,14 @@ overflow-y:hidden;
 			
 				<div class="page-header single-event-page-header">
 					<div class="title-heading">
-								<h1 >ProNights</h1>
+								<h1 >Our Team</h1>
 								<!-- <h3>La la type textline..</h3> -->
 					</div>
 				</div>
 			</header><!-- .site-header -->
 			
 
-					  
+					 
 
 
 				
@@ -352,31 +224,30 @@ overflow-y:hidden;
 
 						
 						<!-------------------- Desktop View--------------------->
-						<div class="desktop ">
-						<div class="container3" >
-							<div class="album">
-								<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
-									<!-- <iframe width="860" height="515" src="indori.mp4" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	</div> -->
-								
-									<video  controls >
-										<source src="indori.mp4" type="video/mp4">
-									</video>
-								</div>
+						<div class="desktop">
+
+							<div class="content" style="border-radius: 0%; margin:0 auto;border: 0px solid white;margin-top:8vw;height:10vw;">
+                                 <div style="margin:5vw;font-size:3vw;font-family: sans-serif;margin-left:25vw;letter-spacing: 0.5px">To Be Updated Soon....</div>
+						    </div>
+
 						</div>
+	<!-------------------- Desktop View--------------------->
+
+
+
+
+	<!-------------------- Mobile View--------------------->
+
+					<div class="mobile" >	
+							
+						<div class="content" style="border-radius: 0%; margin:0 auto;border: 0px solid white;margin-top:3vw;height:10vw;">
+                            <div style="margin:5vw;font-size:5vw;font-family: sans-serif;margin-left:12vw;letter-spacing: 0.5px">To Be Updated Soon....</div>
+                       </div>
+
 						</div>
-						<!-------------------- Desktop View--------------------->
-
-
-
-
-						
-						
-				
-			
+					</div>
+			</div>
 		
-</div>
-</div>
-</div>
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -402,6 +273,7 @@ overflow-y:hidden;
 				document.getElementById("loader").style.display="block";
 				document.getElementById("mainbody").style.overflowY="hidden"
 			}
+
 
 			$(function() {
 
@@ -455,16 +327,6 @@ overflow-y:hidden;
 				}
 
 			});
-
-		// function 	displayup()
-		// 	{
-		// 			var a=document.getElementById("maincontent100");
-		// 			document.getElementById("up").style.display="block";
-		// 	}
-
-
-
-
 
 
 		</script>	
