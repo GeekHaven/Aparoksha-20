@@ -94,11 +94,8 @@
 			 filter: blur(4px);
 		   }
 		 }
-
-
 			@media screen and (max-width: 727px)
 			{
-
 		 .loading2-text span {
 		   display: inline-block;
 		   margin: 0 5px;
@@ -107,8 +104,6 @@
 		   font-family: 'Quattrocento Sans', sans-serif;
 		 }
 			}
-
-
 		 
 			 </style>
 	
@@ -209,6 +204,12 @@
 									<span class="navigation_anchor-text">Team</span>
 								</a>
 							</li>
+							<!-- <li class="navigation_li">
+								<a target="_blank" class="navigation_anchor" href="https://www.thecollegefever.com/events/aparoksha-UlfOCwugab">
+									<span class="icn"><img src="img/right-arrow.svg" width="20px" height="40px"></span>
+									<span class="navigation_anchor-text">Register</span>
+								</a>
+							</li> -->
 							
 						</ul>
 						<span class="navigation_active-dot" style="transform:translateY(51px);"></span>
@@ -296,19 +297,14 @@
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo.js"></script>
 		<script>
-
 			function displayloader()
 			{
 				setTimeout(function(){document.getElementById("loader").style.display="none"
 			},2000)
 				}
-
-
-
 			var slides = document.querySelectorAll('#slides .slide');
 			var currentSlide = 0;
 			var slideInterval = setInterval(nextSlide,2500);
-
 			function nextSlide() {
 				slides[currentSlide].className = 'slide';
 				currentSlide = (currentSlide+1)%slides.length;
@@ -317,3 +313,9 @@
 		</script>
 	</body>
 </html>
+
+<!-- comment
+1. replace text of landing pages
+2.  deleted buttons in mobile viewBox
+3. font size in one pager navigation 
+4. right allignment of tagline -->
