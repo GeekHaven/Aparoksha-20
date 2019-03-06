@@ -993,7 +993,6 @@ nav ul {
     border: none;
     border: 2px solid #f3f3f3;
     margin: 2px;
-    height: 6vh;
     width: 10vw;
     padding: 0px;
     font-size: 1.2vw;
@@ -1007,8 +1006,7 @@ nav ul {
     color: #222;
     border: none;
     border: 2px solid #f3f3f3;
-    margin: 3px;
-    height: 6vh;
+    margin: 2px;
     width: 10vw;
     padding: 0px;
     font-size: 1.2vw;
