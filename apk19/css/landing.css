@@ -922,6 +922,7 @@ nav ul {
     overflow: hidden;
     letter-spacing: 1px;
     line-height: 1.4;
+    font-size: 
 }
 
 .navigation--theme-light .navigation_anchor-circle {
@@ -958,7 +959,6 @@ nav ul {
     left: 3px;
     background-color: #363636;
 }
-
 .navigation_anchor:after {
     bottom: -3px;
 } */
@@ -1005,6 +1005,8 @@ nav ul {
     border: none;
     border: 2px solid #f3f3f3;
     margin-left: 10px;
+    height: 2.7vw;
+    line-height: 2.7vw;
     width: 10vw;
     padding: 0px;
     font-size: 1.2vw;
@@ -1018,7 +1020,8 @@ nav ul {
     color: #222;
     border: none;
     border: 2px solid #f3f3f3;
-/*     margin: 2px; */
+    /* margin-bottom: 3px; */
+    /* height: 2.8vw; */
     width: 10vw;
     padding: 0px;
     font-size: 1.2vw;
@@ -1072,7 +1075,6 @@ nav ul {
     background-size: cover;
     background-position: center;
 }
-
 
 @media screen and (max-width: 850px) {
     .background,
@@ -1142,9 +1144,8 @@ nav ul {
         font-size: 1.5rem;
     }
 
-    .bottom-buttons a{
-        font-size: 13px;
-        width: 90px;
+    .bottom-buttons{
+        display: none;
     }
 
   }
@@ -1153,12 +1154,13 @@ nav ul {
     .one-pager_navigation{
         display: none;
     }
-      .bottom-buttons{
+    .bottom-buttons{
         display: none;
     }
 
   }
- @media screen and (max-width: 370px){
+
+  @media screen and (max-width: 370px){
     .content__title::before{
         left: -9vw;
         bottom: 20px
