@@ -402,23 +402,11 @@ main {
     font-weight: normal;
     mix-blend-mode: screen;
     line-height: 0.8;
+    text-transform: lowercase;
     margin: 5px;
     color: var(--color-title);
     z-index: 799;
     cursor: default;
-}
-.content__title::before{
-    content: 'IIIT ALLAHABAD PRESENTS';
-    display: block;
-    position: relative;
-    bottom: 4vw;
-    font-size: 1rem;
-    font-family: sans-serif;
-    z-index: 399;
-    color: var(--color-tagline);
-    font-weight: 600;
-    letter-spacing: 0.125rem;
-    word-spacing: 0.45rem;
 }
 
 .content__tagline {
@@ -922,7 +910,6 @@ nav ul {
     overflow: hidden;
     letter-spacing: 1px;
     line-height: 1.4;
-    font-size: 
 }
 
 .navigation--theme-light .navigation_anchor-circle {
@@ -948,7 +935,7 @@ nav ul {
     display: block;
     transform: translateZ(0);
     transition: all 0.3s;
-    font-size: 1.2rem;
+    font-size: 0.9vw;
 }
 
 /* .navigation_anchor:after {
@@ -959,6 +946,7 @@ nav ul {
     left: 3px;
     background-color: #363636;
 }
+
 .navigation_anchor:after {
     bottom: -3px;
 } */
@@ -997,16 +985,15 @@ nav ul {
     bottom: 0;
     z-index: 190;
     transform: translate(-50%,0);
-    margin: 1px;
+    margin: 10px;
 }
 .bottom-buttons a{
     background: none;
     color: #fff;
     border: none;
     border: 2px solid #f3f3f3;
-    margin-left: 10px;
-    height: 2.7vw;
-    line-height: 2.7vw;
+    margin: 2px;
+    height: 6vh;
     width: 10vw;
     padding: 0px;
     font-size: 1.2vw;
@@ -1020,8 +1007,8 @@ nav ul {
     color: #222;
     border: none;
     border: 2px solid #f3f3f3;
-    /* margin-bottom: 3px; */
-    /* height: 2.8vw; */
+    margin: 3px;
+    height: 6vh;
     width: 10vw;
     padding: 0px;
     font-size: 1.2vw;
@@ -1075,6 +1062,21 @@ nav ul {
     background-size: cover;
     background-position: center;
 }
+.upper_text{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    position: relative;
+    right: -12%;
+    /* transform: translateX(12vw); */
+}
+
+ @media screen and (max-width: 1250px){
+    .upper_text{
+        transform: translateX(-6vw);
+    }
+} 
+
 
 @media screen and (max-width: 850px) {
     .background,
@@ -1091,6 +1093,9 @@ nav ul {
         z-index: 1;
 
     }
+    .upper_text{
+        transform: translateX(-8vw);
+    }    
     .one-pager_navigation{
         position: absolute;
         bottom: -45vh;
@@ -1119,10 +1124,6 @@ nav ul {
     .content__tagline{
         font-size: 1.1rem;
     }
-    .content__title::before{
-        font-size: 0.8rem;
-        left: -40px;
-    }
     .header-logo a{
         height: 50px;
         width: 50px;
@@ -1144,8 +1145,9 @@ nav ul {
         font-size: 1.5rem;
     }
 
-    .bottom-buttons{
-        display: none;
+    .bottom-buttons a{
+        font-size: 13px;
+        width: 90px;
     }
 
   }
@@ -1154,17 +1156,7 @@ nav ul {
     .one-pager_navigation{
         display: none;
     }
-    .bottom-buttons{
-        display: none;
-    }
 
-  }
-
-  @media screen and (max-width: 370px){
-    .content__title::before{
-        left: -9vw;
-        bottom: 20px
-    }
   }
 
 
