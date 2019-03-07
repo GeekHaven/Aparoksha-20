@@ -1159,6 +1159,28 @@ nav ul {
 
   }
 
+  @media screen and (max-width: 370px){
+    .content__title::before{
+        left: -9vw;
+        bottom: 20px
+    }
+  }
+
+@media screen and (max-width: 340px){
+    .content__title{
+        font-size: 50px;
+    }
+    .content__title::before{
+        left: -4vw;
+        bottom: 20px;
+        font-size: 0.7rem
+    }
+    .title-date{
+        font-size: 3.5vw;
+        transform: translateY(4vw);
+    }
+    
+}
 
 
 
