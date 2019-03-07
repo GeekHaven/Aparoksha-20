@@ -415,14 +415,14 @@ main {
     font-size: 1rem;
     font-family: sans-serif;
     z-index: 399;
-    color: var(--color-tagline);
+    color: #fff;
     font-weight: 600;
     letter-spacing: 0.125rem;
     word-spacing: 0.45rem;
 }
 
 .content__tagline {
-    color: var(--color-tagline);
+    color: #fff;
     margin: 1rem 0 0 0;
     font-weight: 600;
     font-size: 1.5rem;
@@ -1101,7 +1101,8 @@ nav ul {
     .content{
         display: flex;
         flex-flow: column;
-        padding-top: 4vh;
+        padding-top: 8vh;
+        /* transform: translateY(5vw); */
     }
     .codrops-header{
         top: -70px;
@@ -1147,6 +1148,9 @@ nav ul {
     .bottom-buttons{
         display: none;
     }
+    .title-date{
+        font-size: 10px
+    }
 
   }
 
@@ -1171,14 +1175,22 @@ nav ul {
     .content__title{
         font-size: 50px;
     }
+    .content__tagline{
+        font-size: 0.9rem;
+    }
     .content__title::before{
         left: -4vw;
         bottom: 20px;
         font-size: 0.7rem
     }
     .title-date{
-        font-size: 3.5vw;
+        font-size: 2.7vw;
+        letter-spacing: 1px;
+        word-spacing: 1px;
         transform: translateY(4vw);
+    }
+    .title-date sup{
+        margin: -3px;
     }
     
 }
