@@ -415,14 +415,14 @@ main {
     font-size: 1rem;
     font-family: sans-serif;
     z-index: 399;
-    color: var(--color-tagline);
+    color: #fff;
     font-weight: 600;
     letter-spacing: 0.125rem;
     word-spacing: 0.45rem;
 }
 
 .content__tagline {
-    color: var(--color-tagline);
+    color: #fff;
     margin: 1rem 0 0 0;
     font-weight: 600;
     font-size: 1.5rem;
