@@ -5,14 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
-        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="shortcut icon" href="../apkfav.png"> 
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="./style.css"/>  
 		<script src="js/modernizr.custom.70736.js"></script>
 		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
 		<style>img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;} </style>
-	
+		<title>ABOUT | APAROKSHA</title>
 	
 		<style>
 
@@ -20,7 +20,6 @@
   
   padding: 0px;
   margin: 0px;
-	overflow-y: hidden;
 }
 
 
@@ -31,7 +30,6 @@
   width: 100%;
   height: 100vh;
   background: #0b0b0b;
-	z-index:999999;
 }
 .spin-wrapper .spinner {
   position: absolute;
@@ -83,12 +81,12 @@
 	
 	
 	</head>
-	<body onload="displayloader()" id="mainbody">
+	<body onload="displayloader()">
 			<div class="spin-wrapper" id="loader">
 					<div class="spinner">
 					</div>
 				</div>
-        <div class="container" >
+        <div class="container">
 			<header class="site-header">
 				<div class="header-bar">
 					<div class="container-fluid">
@@ -126,7 +124,10 @@
             <p class="fadeInRight">The previous iterations of Aparoksha have seen eminent personalities from various walks of life coming to deliver talks on a diverse range of topics, as well as various performances-cum-events like The Comedy Night, <span>EDM Night</span> and <span>After Party</span>.</p>
 
             <p class="fadeInLeft">Technology is best when it brings people together'. In keeping with this motto, Aparoksha also organises a Tech Tour, an initiative taken by the Technical Society of IIIT Allahabad to conduct workshops and talks in various schools and colleges across India to increase technical awareness, build enthusiasm in people and give back to the society.</p>
-        </div>
+				</div>
+				<footer>
+					<div style="background-color:rgba(255, 255, 255, 0.1);width:100%; height:3vw;"></div>
+				</footer>
     </div>
         
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -139,18 +140,12 @@
 			
 			function displayloader()
 			{
-				setTimeout(function(){document.getElementById("loader").style.display="none";
-				document.getElementById("mainbody").style.overflowY="scroll"},2000)
-				
-				// document.getElementById("maincontent").style.display="block";
-
+				document.getElementById("loader").style.display="none";
 			}
 			function displayloaderup()
 			{
 				document.getElementById("loader").style.display="block";
-				document.getElementById("mainbody").style.overflowY="hidden"
 			}
-
 
 			$(function() {
 
