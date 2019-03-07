@@ -5,14 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
-        <link rel="shortcut icon" href="../apkfav.png"> 
-				<link rel="stylesheet" type="text/css" href="css/style.css"/>
-				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script src="js/modernizr.custom.70736.js"></script>
 		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 		<style>img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;} </style>
 		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
-			<title>GALLERY | APAROKSHA</title>
+	
 		<style>
 
 
@@ -102,11 +101,6 @@
 					position:relative;
 					top:7vw;
 				}
-
-				#more
-				{
-					font-size:10vw !important;
-				}
 			}		
 		
 		</style>
@@ -130,13 +124,13 @@
 							<div class="col-10 col-lg-2 order-lg-1">
 								<div class="site-branding">
 									<div class="site-title">
-										<a href="../index.html"><img src="../images/logo.svg" alt="logo" ></a>
+										<a href="../index.html"><img src="images/logo.svg" alt="logo" ></a>
 									</div><!-- .site-title -->
 								</div><!-- .site-branding -->
 							</div><!-- .col -->
 							<div class="col-10 col-lg-2 order-lg-1">
 							<div class="close-btn">
-								<a href="../index.html"><img onclick="displayloaderup()" src="../images/close1.svg" alt="close"></a>
+								<a href="../index.html"><img onclick="displayloaderup()" src="images/close1.svg" alt="close"></a>
 							</div>
 							</div>
 						</div><!-- .row -->
@@ -682,17 +676,13 @@
 			</li>
 		</ul>
 
-					<div class="gamma-overlay" ></div>
+					<div class="gamma-overlay"></div>
 
-					<div id="loadmore" class="loadmore" style="background-color:rgba(255, 255, 255, 0)"><i id="more" style="font-size:4vw;color:white;margin-top:3vw;" class="fas fa-caret-down"></i></div>
+					<div id="loadmore" class="loadmore">Click for more items...</div>
 
 				</div>
 
-			</div><!--/main-->	
-			<footer>
-				<div style="background-color:rgba(255, 255, 255, 0.1);width:100%; height:3vw;"></div>
-			</footer>
-
+			</div><!--/main-->
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script src="js/jquery.masonry.min.js"></script>
