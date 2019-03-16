@@ -408,11 +408,11 @@ main {
     cursor: default;
 }
 .content__title::before{
-    content: 'IIIT ALLAHABAD PRESENTS';
+    content: 'IIIT ALLAHABAD Presents';
     display: block;
     position: relative;
     bottom: 4vw;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-family: sans-serif;
     z-index: 399;
     color: #fff;
@@ -949,6 +949,8 @@ nav ul {
     transform: translateZ(0);
     transition: all 0.3s;
     font-size: 1.2rem;
+    border-left: 3px solid white;
+    padding-left: 9px;
 }
 
 /* .navigation_anchor:after {
