@@ -616,13 +616,6 @@ main {
     height: calc(100% - 3rem);
 }
 
-.menu__item-link::after {
-    content: '\27F6';
-    display: block;
-    margin-top: auto;
-    font-size: 0.85rem;
-}
-
 @media screen and (min-width: 53em) {
     body {
         padding: 0;
