@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css2/spin.css" />
 		<style>img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;} </style>
 		<script>document.documentElement.className="js2";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	
+
 		<style>
 				@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
 		 .loading2 {
@@ -176,7 +176,7 @@
 		<main>
 			<div class="content">
 				<div class="background"></div>
-				<h2 class="content__title">Aparoksha’19</h2>
+				<h2 class="content__title" id="content__title__id">Aparoksha’19</h2>
 				<p class="content__tagline">Beyond the Wall</p>
 			</div>
 			<div class="one-pager_navigation">
@@ -314,5 +314,13 @@
 				slides[currentSlide].className = 'slide showing';
 			}
 		</script>
+			<script>
+              let node = document.getElementById('content__title__id');
+              let contentDiv = document.createElement("div");
+
+              contentDiv.setAttribute("class", "content__title__before");
+              contentDiv.innerHTML = "<a href='https://iiita.ac.in' target='_blank'>IIIT ALLAHABAD </a>Presents";
+              node.insertBefore(contentDiv, node.childNodes[0]);
+			</script>
 	</body>
 </html>

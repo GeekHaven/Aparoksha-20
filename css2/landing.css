@@ -407,11 +407,10 @@ main {
     z-index: 799;
     cursor: default;
 }
-.content__title::before{
-    content: 'IIIT ALLAHABAD Presents';
+.content__title__before{
     display: block;
     position: relative;
-    bottom: 4vw;
+    bottom: 50%;
     font-size: 1.3rem;
     font-family: sans-serif;
     z-index: 399;
@@ -419,6 +418,7 @@ main {
     font-weight: 600;
     letter-spacing: 0.125rem;
     word-spacing: 0.45rem;
+    left: 3%;
 }
 
 .content__tagline {
