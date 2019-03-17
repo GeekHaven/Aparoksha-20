@@ -407,18 +407,18 @@ main {
     z-index: 799;
     cursor: default;
 }
-.content__title::before{
-    content: 'IIIT ALLAHABAD PRESENTS';
+.content__title__before{
     display: block;
     position: relative;
-    bottom: 4vw;
-    font-size: 1rem;
+    bottom: 50%;
+    font-size: 1.3rem;
     font-family: sans-serif;
     z-index: 399;
     color: #fff;
     font-weight: 600;
     letter-spacing: 0.125rem;
     word-spacing: 0.45rem;
+    left: 3%;
 }
 
 .content__tagline {
@@ -614,13 +614,6 @@ main {
     display: flex;
     flex-direction: column;
     height: calc(100% - 3rem);
-}
-
-.menu__item-link::after {
-    content: '\27F6';
-    display: block;
-    margin-top: auto;
-    font-size: 0.85rem;
 }
 
 @media screen and (min-width: 53em) {
@@ -949,6 +942,8 @@ nav ul {
     transform: translateZ(0);
     transition: all 0.3s;
     font-size: 1.2rem;
+    border-left: 3px solid white;
+    padding-left: 9px;
 }
 
 /* .navigation_anchor:after {
