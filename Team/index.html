@@ -329,13 +329,13 @@ overflow-y:hidden;
         }  
         .span_mail{
         	margin-left:1rem;
-             font-weight:900;
+             font-weight:700;
               font-size:1rem;
-              letter-spacing: 0.15rem;
+              letter-spacing: 0.06rem;
              font-family: 'Open Sans', sans-serif;
              /*background-image: linear-gradient(to right,#c0a000,#333);
             -*/
-             background-image:linear-gradient(to right, #111, #333);
+             background-image:linear-gradient(to right, #111, #c0a000,#000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
               -moz-background-clip:text;
@@ -353,6 +353,18 @@ overflow-y:hidden;
               	color:red;
         	margin-left:50%;
         	transform: translateX(-50%);
+
+        }
+        a{
+          cursor:default;
+        }
+        @media screen only and (max-width: 500px){
+          .span_mail{
+            letter-spacing: 0;
+          }
+          .profile-card .profile-content .title > span{
+            letter-spacing: 0rem;
+          }
 
         }
 
@@ -829,7 +841,7 @@ overflow-y:hidden;
   	<div class="album2">
             <div class="profile-card">
                 <div class="profile-img" style="grid-area:two;">
-                    <img src="Images/Shreyansh_Dwivedi.jpg" alt="Team Image" style="height:100%;width:130%;"/>
+                    <img src="Images/Shreyansh_dwivedi.jpg" alt="Team Image" style="height:100%;width:130%;"/>
                 </div>
                 <div class="profile-content">
                     <h2 class="title">Shreyansh Dwivedi
@@ -876,7 +888,7 @@ overflow-y:hidden;
   	<div class="album">
             <div class="profile-card">
                 <div class="profile-img" style="grid-area:two;">
-                    <img src="Images/Rakshit_Sai.jpg" alt="Team Image" style="height:100%;width:100%;"/>
+                    <img src="Images/rakshit_sai.jpg" alt="Team Image" style="height:100%;width:100%;"/>
                 </div>
                 <div class="profile-content">
                     <h2 class="title">Rakshit Sai
