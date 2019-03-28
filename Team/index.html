@@ -167,15 +167,17 @@ overflow-y:hidden;
      "one two"
      "one two"  
      ;    
-
 }
 .container3 .album2{
-  width:28vw;
-  height:28vw;
+  height:35vw;
   display:grid;
-  grid-auto-columns: repeat(1,1fr);  
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: 
+     "one two"
+     "one two"  
+     ;
+  grid-gap:3.5vw;   
 }
-
 .container3 .img{
    background: #333;
    background-size: cover;
@@ -188,7 +190,7 @@ overflow-y:hidden;
 	grid-template-areas: "one";
 }
 .container4 .album2{
-  height:80vw;/*Height consistency*/
+  height:90vw;/*Height consistency*/
   display: grid;
   grid-auto-columns: repeat(1,1fr);
 }
@@ -255,6 +257,9 @@ overflow-y:hidden;
             transform: scale(1,1);
             transition: all 0.50s linear;
             opacity: 0;
+            -webkit-filter:blur(10px);
+             -moz-filter:blur(10px);
+             filter:blur(10px);
 
         }
         .profile-card .profile-content{
@@ -352,13 +357,14 @@ overflow-y:hidden;
         	font-size:2.5rem;
         	color:inherit;
           font-family: Apple Chancery, cursive;
-          letter-spacing: 0.1vw;
+          letter-spacing: 0vw;
         }
         .typical-font2{
         	text-align: center;
               	color:red;
         	margin-left:50%;
         	transform: translateX(-50%);
+          letter-spacing: 0rem;
           font-family: Apple Chancery,cursive;
         }
         a{
@@ -373,7 +379,7 @@ overflow-y:hidden;
           }
         }
         .newimg{
-          height:35vw;
+          height:29vw;
           left:50%;
           margin-left:0vw;
         }
@@ -398,12 +404,8 @@ overflow-y:hidden;
 			background:      -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 			background:         linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 		}*/
-
       </style>
-  
-  
   </head>
-
   <!-- onscroll="displayup() -->
 
     <body  id="mainbody" onload="displayloader()" >
@@ -440,14 +442,6 @@ overflow-y:hidden;
           </div>
         </div>
       </header><!-- .site-header -->
-      
-
-           
-
-
-        
-
-
             <div class="main" style="margin:0 auto;">
             <!-------------------- Desktop View--------------------->
             <div class="desktop">
@@ -455,7 +449,7 @@ overflow-y:hidden;
               <div class="typical_font">
                 OVERALL COORDINATORS
               </div>
-              <div class="container3" >
+              <div class="container3">
                 <div class="album">
                    <div class="profile-card">
                 <div class="profile-img newimg" style="grid-area:one;">
@@ -467,7 +461,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iwm2016005@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iwm2016005@iiita.ac.in
                         </span></a>
@@ -485,7 +479,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iwm2016501@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iwm2016501@iiita.ac.in
                         </span></a>
@@ -510,7 +504,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iec2016501@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iec2016501@iiita.ac.in
                         </span></a>
@@ -528,7 +522,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016126@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016126@iiita.ac.in
                         </span></a>
@@ -550,7 +544,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016068@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016068@iiita.ac.in
                         </span></a>
@@ -568,7 +562,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iim2016001@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iim2016001@iiita.ac.in
                         </span></a>
@@ -590,7 +584,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iec2016014@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iec2016014@iiita.ac.in
                         </span></a>
@@ -599,7 +593,7 @@ overflow-y:hidden;
             </div>
           </div>
             <div class="profile-card">
-                <div class="profile-img" style="grid-area:two;">
+                <div class="profile-img newimg" style="grid-area:two;">
                     <img src="Images/Ashutosh_Khandelwal.jpg" alt="Team Image" style="height:100%;width:100%;"/>
                 </div>
                 <div class="profile-content">
@@ -608,7 +602,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016514@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016514@iiita.ac.in
                         </span></a>
@@ -630,7 +624,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016032@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016032@iiita.ac.in
                         </span></a>
@@ -648,7 +642,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016010@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016010@iiita.ac.in
                         </span></a>
@@ -670,7 +664,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iwm2016004@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iwm2016004@iiita.ac.in
                         </span></a>
@@ -678,6 +672,7 @@ overflow-y:hidden;
                     </div>
             </div>
           </div>
+          
            
                 </div>
               </div>
@@ -693,7 +688,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016061@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016061@iiita.ac.in
                         </span></a>
@@ -711,7 +706,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iec2016066@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iec2016066@iiita.ac.in
                         </span></a>
@@ -734,7 +729,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:ihm2016501@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           ihm2016501@iiita.ac.in
                         </span></a>
@@ -752,7 +747,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016508@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016508@iiita.ac.in
                         </span></a>
@@ -775,7 +770,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016515@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016515@iiita.ac.in
                         </span></a>
@@ -783,14 +778,8 @@ overflow-y:hidden;
                     </div>
             </div>
           </div>
-          
-            
-                </div>
-              </div>
-              <div class="container3">
-              	<div class="album">
-               <div class="profile-card">
-                <div class="profile-img" style="grid-area:two;">
+            <div class="profile-card" style="height:28vw;">
+                <div class="profile-img" style="grid-area:two;width:30vw;">
                     <img src="Images/Piyush_Gurnule.jpg" alt="Team Image" style="height:100%;width:100%;"/>
                 </div>
                 <div class="profile-content">
@@ -799,14 +788,19 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016035@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016035@iiita.ac.in
                         </span></a>
                       <!--  <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>-->
                     </div>
                 </div>
-            </div></div></div>          </div>
+            </div>
+          
+            
+                </div>
+              </div>
+                        </div>
         </div>
 
 
@@ -838,7 +832,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iwm2016005@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iwm2016005@iiita.ac.in
                         </span></a>
@@ -860,7 +854,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iwm2016501@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iwm2016501@iiita.ac.in
                         </span></a>
@@ -870,7 +864,7 @@ overflow-y:hidden;
             </div>
                 </div>
               </div>
-              <div class="typical_font2" style="font-size: 2.3rem;margin-bottom:4vw;margin-top:15vw;">
+              <div class="typical_font2" style="font-size: 2rem;margin-bottom:4vw;margin-top:15vw;text-align:center;font-family:Apple Chancery,cursive;">
                 HEADS
               </div>
               <div class="container4" >
@@ -885,7 +879,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iec2016501@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iec2016501@iiita.ac.in
                         </span></a>
@@ -907,7 +901,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016126@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016126@iiita.ac.in
                         </span></a>
@@ -929,7 +923,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016068@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016068@iiita.ac.in
                         </span></a>
@@ -952,7 +946,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iim2016001@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iim2016001@iiita.ac.in
                         </span></a>
@@ -974,7 +968,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iec2016014@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iec2016014@iiita.ac.in
                         </span></a>
@@ -991,12 +985,12 @@ overflow-y:hidden;
                     <img src="Images/Ashutosh_Khandelwal.jpg" alt="Team Image" style="height:100%;width:100%;"/>
                 </div>
                 <div class="profile-content">
-                    <h2 class="title">Ashutosh Khandelwal
+                    <h2 class="title" style="letter-spacing: 0rem;">Ashutosh Khandelwal
                         <span class="span_title">Public Relations</span>
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016514@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016514@iiita.ac.in
                         </span></a>
@@ -1018,7 +1012,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016032@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016032@iiita.ac.in
                         </span></a>
@@ -1036,7 +1030,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016010@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016010@iiita.ac.in
                         </span></a>
@@ -1058,7 +1052,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iwm2016004@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iwm2016004@iiita.ac.in
                         </span></a>
@@ -1081,7 +1075,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016061@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016061@iiita.ac.in
                         </span></a>
@@ -1102,7 +1096,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iec2016066@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iec2016066@iiita.ac.in
                         </span></a>
@@ -1125,7 +1119,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:ihm2016501@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           ihm2016501@iiita.ac.in
                         </span></a>
@@ -1147,7 +1141,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016508@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016508@iiita.ac.in
                         </span></a>
@@ -1170,7 +1164,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016515@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016515@iiita.ac.in
                         </span></a>
@@ -1194,7 +1188,7 @@ overflow-y:hidden;
                     </h2>
                     <div class="social-link">
                         <a href="mailto:iit2016035@iiita.ac.in" target="_blank">
-                          <i class="fas fa-envelope-square fa-2x" style="margin-left:1.5vw;"></i>
+                          <i class="fas fa-envelope-square fa-2x" style="margin-left:0vw;background-color: #c0a000;"></i>
                           <span class="span_title span_mail">
                           iit2016035@iiita.ac.in
                         </span></a>
