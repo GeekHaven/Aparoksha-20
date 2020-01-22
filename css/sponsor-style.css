@@ -1,0 +1,294 @@
+
+nav ul img{
+    height: 80px;
+}
+
+html,body
+{
+    margin: 0;
+}
+
+body
+{
+    background-color:white;
+    font-size: 10px;
+    color:black !important;
+}
+
+
+nav ul
+    {
+        list-style: none;
+    }
+    
+    li
+    {
+        display: inline; 
+    }
+    
+    li a
+    {
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    
+    li a:hover
+    {
+        text-decoration: underline;
+        color:white !important;
+    }
+
+    .heading
+    {
+        padding-top: 12.5%;
+        text-align: center;
+        font-size: 7em;
+        letter-spacing: 2px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+
+@media screen and (max-width: 786px)
+{
+    ul
+    {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    li a{
+            display: none;
+    }
+
+    li:nth-child(1)
+    {
+        margin-left:  23.00%;
+    }
+
+    
+
+    nav ul img{
+        height: 100px;
+    }
+
+    .heading
+    {
+        margin: -50px 0 50px 0%;
+        text-align: center;
+        font-size: 5.5em;
+        letter-spacing: 2px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    
+}
+
+.home
+{
+    background-color: black;
+    height: 650px;
+}
+
+@media screen and (max-width: 574px)
+{
+    .home
+    {
+    background-color: #333;
+    height: 400px;
+    }
+
+    .heading p
+    {
+    margin-top: 3%;
+    }
+
+    #footer
+    {
+    height: 150px;
+    background-color: black;
+    text-align: center;
+    padding-top: 10%;
+    }
+
+    #footer a
+    {
+        color: white;
+        font-size: 2.4em;
+    }
+
+}
+
+    
+
+@media screen and (min-width: 768px )
+{
+    
+    
+    nav li:nth-child(1)
+    {
+        float:left;
+        margin-top: 1%;
+    }
+    
+    nav li:nth-child(2)
+    {
+        float: right;
+        margin-top: 2%;
+        margin-right: 3.3%;
+        font-size: 1.6em;
+    }
+    
+    .heading
+    {
+        padding-top: 12.5%;
+        text-align: center;
+        font-size: 7em;
+        letter-spacing: 2px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    
+}   
+
+.heading p
+{
+    margin-top: 5%;
+}
+
+
+@media screen and (min-width: 574px)
+{
+    #footer
+    {
+        display: none;
+    }
+}
+
+#sponsor
+{
+    padding: 4% 7.5% 5% 7.5%;
+}
+
+ .col-12 .dabba
+{
+    max-width: 275px;
+    margin: 0 auto;
+}
+
+.info
+{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.info p
+{
+    font-size: 1.5em;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.info h4
+{
+    margin-bottom: 4px;
+}
+
+.sp-div .dabba{
+    position: relative;
+    display: block;
+    max-width: 400px;
+    height: 200px;
+    margin: auto auto;
+    text-align: center;
+}
+
+.dabba {
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 440px)
+{
+    .sp-div .dabba
+    {
+        height: 150px;
+    }
+}
+
+.dabba img
+{
+    max-height: 100%;
+}
+
+.sp-div
+{
+    margin: 0 0 40px;
+}
+
+#zebronics .dabba
+{
+    padding: 12.5% 0;
+}
+
+
+.textRightLeft {
+    height: 60px;
+    width: 240px;
+    font-size: 17px;
+    text-align: center;
+    overflow: hidden;
+    background: black;
+    position: relative;
+    line-height: 55px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.textRightLeft span {
+    display: block;
+}
+
+.textRightLeft:hover span {
+    animation: animButtonSpan 0.4s;
+}
+
+@keyframes animButtonSpan {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    33% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    66% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+

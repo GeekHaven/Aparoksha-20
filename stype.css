@@ -1,0 +1,85 @@
+.apkLower{
+    fill: #000;
+    stroke: #000;
+    stroke-dasharray: 1200;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(.3,.63,.01,0);
+}
+.apkUpper{
+    fill: #000;
+    stroke: #000;
+    stroke-dasharray: 3200;
+    opacity: 10;
+    animation: animate1 3s cubic-bezier(.3,.63,.01,0);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1200;
+    }
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1200;
+    }
+    /* 60%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    } */
+    90%{
+        fill: rgba(255, 255, 255, 0);
+    }
+    100%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 0);;
+        stroke-dashoffset: 0 ;
+    }
+}
+@keyframes animate1 {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 3200;
+    }
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 3200;
+    }
+    /* 60%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    } */
+    90%{
+        fill: rgba(255, 255, 255, 0);
+    }
+    100%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 0);;
+        stroke-dashoffset: 0 ;
+    }
+}
+
+.site-intro__logo svg{
+    width: 130%;
+}
+
+.site-logo svg{
+    width: 120%;
+}
+.site-footer__links{
+    font-size: 18px;
+}
+.size{
+    font-size: 14px;
+}
+small{
+    font-size: 45px;
+}
+.time1{
+    font-size: 60px;
+}
